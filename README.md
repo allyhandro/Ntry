@@ -1,6 +1,6 @@
 Final Project - 'Ntry
 =====
-#### author: Ally Han (awh264)
+#### author: Ally Han (awh264), Curtis Mann, Caroline Lai
 
 ## Project Description Overview
 With the capabilities of smart phones increasing year by year, specialized hardware systems like barcode scanners are gradually phasing out of use. 'Ntry is an art handling storage logistics web application with an accompanying iOS application that automates the most tedious parts of inventory without using unitasker hardware.
