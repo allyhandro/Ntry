@@ -1,9 +1,9 @@
 Final Project - 'Ntry
 =====
 #### Members and Responsibilities
-Ally Han (awh264) - web application deployment / database integration
-Curtis Mann (cmm 893) - QR code integration
-Caroline Lai (cl2852) - iOS UXD 
+* Ally Han (awh264) - web application deployment / database integration
+* Curtis Mann (cmm 893) - QR code integration
+* Caroline Lai (cl2852) - iOS UXD 
 
 
 ## Project Description Overview
