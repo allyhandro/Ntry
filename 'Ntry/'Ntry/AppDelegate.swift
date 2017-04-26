@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationBarAppearance = UINavigationBar.appearance()
         
         navigationBarAppearance.tintColor = uicolorFromHex(rgbValue:0xFFE476)
-        navigationBarAppearance.barTintColor = uicolorFromHex(rgbValue:0x9093A6)
+        navigationBarAppearance.barTintColor = uicolorFromHex(rgbValue:0x7B809E)
         
         let navbarFont = UIFont(name: "Didot-Bold", size: 25)
         navigationBarAppearance.titleTextAttributes = [NSFontAttributeName: navbarFont, NSForegroundColorAttributeName:uicolorFromHex(rgbValue:0xFFE476)]
