@@ -13,6 +13,22 @@ class AddViewController: UIViewController{
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
+    @IBOutlet weak var artImage: UIImageView!
+    
+    @IBOutlet weak var artLabel: UILabel!
+    
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var clientLabel: UILabel!
+    
+    @IBOutlet weak var entryLabel: UILabel!
+    
+    @IBOutlet weak var locLabel: UILabel!
+    
+    @IBOutlet weak var accessLabel: UILabel!
+    
+    @IBOutlet weak var accessButton: UIButton!
+    
+    
     override func viewDidLoad() {
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
