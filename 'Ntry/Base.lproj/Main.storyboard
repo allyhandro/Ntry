@@ -165,28 +165,8 @@
                                             <segue destination="wyh-ht-G0V" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="lS8-9R-JSL"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="45" id="pTh-yD-6Cp">
-                                        <rect key="frame" x="0.0" y="231" width="375" height="45"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pTh-yD-6Cp" id="SkY-t8-76P">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add/Edit Art" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewB-1c-Szu">
-                                                    <rect key="frame" x="41" y="7" width="175" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="20"/>
-                                                    <color key="textColor" red="0.94598263500000002" green="0.91928595300000004" blue="0.81474971770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="UDt-Oi-tsr" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="bBy-Wr-Qn4"/>
-                                        </connections>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="45" id="24C-9N-tO5">
-                                        <rect key="frame" x="0.0" y="276" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="231" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="24C-9N-tO5" id="wGh-OH-Fb3">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -201,12 +181,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="grF-Eq-SOq" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Oo8-pr-Jx8"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="45" id="ywX-cP-jBH">
-                                        <rect key="frame" x="0.0" y="321" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="276" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ywX-cP-jBH" id="5ez-O0-BPd">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -284,7 +261,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fkL-DP-4IE" id="36B-nu-sVB">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -304,22 +281,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3j-gj-hpC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3150" y="363"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="6a5-Jh-viw">
-            <objects>
-                <navigationController id="UDt-Oi-tsr" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="APL-qT-NZE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="4Kh-He-DjJ" kind="relationship" relationship="rootViewController" id="Y1K-81-CoD"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cbd-aJ-OxF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2249" y="1693"/>
         </scene>
         <!--Add/Edit Art-->
         <scene sceneID="9tO-ac-n3b">
@@ -446,7 +407,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="znO-VU-m0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3149.5999999999999" y="1692.5037481259371"/>
+            <point key="canvasLocation" x="3898" y="363"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xmh-DB-Qte">
@@ -462,7 +423,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MOE-3R-89c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2249" y="2396"/>
+            <point key="canvasLocation" x="2250" y="1759"/>
         </scene>
         <!--Settings-->
         <scene sceneID="kQX-rH-Z3z">
@@ -486,7 +447,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rSG-7u-BcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3150" y="2396"/>
+            <point key="canvasLocation" x="3150" y="1759"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oKo-9V-dT3">
@@ -640,7 +601,7 @@
                     <connections>
                         <outlet property="artNum" destination="pRx-0G-NBD" id="HUW-jt-xue"/>
                         <outlet property="clienNum" destination="fxA-5z-NtB" id="XLV-1n-J50"/>
-                        <outlet property="menuButton" destination="oEd-Mb-XFG" id="wPF-BG-mDp"/>
+                        <outlet property="menuButton" destination="oEd-Mb-XFG" id="Nd4-2t-Qiu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F2h-PC-Jkx" userLabel="First Responder" sceneMemberID="firstResponder"/>
