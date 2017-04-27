@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		825260331EB29463008292B2 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825260321EB29463008292B2 /* QRCodeViewController.swift */; };
 		82EBC1881EA6CC1F008A7725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EBC1871EA6CC1F008A7725 /* AppDelegate.swift */; };
 		82EBC18A1EA6CC1F008A7725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EBC1891EA6CC1F008A7725 /* ViewController.swift */; };
 		82EBC18D1EA6CC1F008A7725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82EBC18B1EA6CC1F008A7725 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		825260321EB29463008292B2 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		82EBC1841EA6CC1F008A7725 /* 'Ntry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "'Ntry.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82EBC1871EA6CC1F008A7725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82EBC1891EA6CC1F008A7725 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				82EBC1B71EA6CCD5008A7725 /* ClientsTableViewController.swift */,
 				82EBC1B91EA6CD6D008A7725 /* ArtTableViewController.swift */,
 				82EBC1C71EA6E502008A7725 /* ScanViewController.swift */,
+				825260321EB29463008292B2 /* QRCodeViewController.swift */,
 				82EBC1C91EA6E514008A7725 /* AddViewController.swift */,
 				82EBC1CB1EA6E51E008A7725 /* SettingsViewController.swift */,
 				82EBC1891EA6CC1F008A7725 /* ViewController.swift */,
@@ -226,6 +229,7 @@
 				TargetAttributes = {
 					82EBC1831EA6CC1F008A7725 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ALQS2S2FD4;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -294,6 +298,7 @@
 			files = (
 				82EBC18A1EA6CC1F008A7725 /* ViewController.swift in Sources */,
 				82EBC1C11EA6CFCE008A7725 /* MenuTableViewController.swift in Sources */,
+				825260331EB29463008292B2 /* QRCodeViewController.swift in Sources */,
 				82EBC1CA1EA6E514008A7725 /* AddViewController.swift in Sources */,
 				82EBC1CC1EA6E51E008A7725 /* SettingsViewController.swift in Sources */,
 				82EBC1881EA6CC1F008A7725 /* AppDelegate.swift in Sources */,
@@ -444,9 +449,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = ALQS2S2FD4;
 				INFOPLIST_FILE = "'Ntry/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "nyu.edu.-Ntry";
+				PRODUCT_BUNDLE_IDENTIFIER = nyu.edu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "'Ntry/'Ntry-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -459,9 +466,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = ALQS2S2FD4;
 				INFOPLIST_FILE = "'Ntry/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "nyu.edu.-Ntry";
+				PRODUCT_BUNDLE_IDENTIFIER = nyu.edu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "'Ntry/'Ntry-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
