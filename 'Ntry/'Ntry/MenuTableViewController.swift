@@ -25,15 +25,9 @@ class MenuTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
-        let row = indexPath.row;
-        if(row == 0){
-            cell.contentView.backgroundColor = uicolorFromHex(rgbValue: 0x9093A6)
-        }
-        else{
-            cell.contentView.backgroundColor = uicolorFromHex(rgbValue: 0xE8D1A8)
-        }
+        cell.contentView.backgroundColor = uicolorFromHex(rgbValue: 0x425091)
+        
     }
-    
     
     func uicolorFromHex(rgbValue:UInt32)->UIColor{
         let red = CGFloat((rgbValue & 0xFF0000) >> 16)/255.0

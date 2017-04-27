@@ -10,7 +10,11 @@ import Foundation
 import UIKit
 
 class HomeViewController: UIViewController{
-    @IBOutlet weak var menuButton:UIBarButtonItem!
+
+    @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet weak var clienNum: UILabel!
+    @IBOutlet weak var artNum: UILabel!
+    
     
     override func viewDidLoad() {
         if self.revealViewController() != nil {
