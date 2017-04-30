@@ -478,12 +478,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFg-en-Toh">
-                                <rect key="frame" x="112" y="305" width="150" height="150"/>
+                                <rect key="frame" x="112" y="180" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.1039212868" green="0.1327252984" blue="0.29472839830000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="focus"/>
                                 <connections>
                                     <segue destination="Mya-PD-RGR" kind="presentation" id="EbB-ay-UgL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBM-Kh-aJd">
+                                <rect key="frame" x="112" y="406" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.1039212868" green="0.1327252984" blue="0.29472839830000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="focus"/>
+                                <connections>
+                                    <segue destination="Mya-PD-RGR" kind="presentation" id="fQQ-UZ-B02"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -741,6 +750,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="hHh-Yy-15L"/>
+        <segue reference="EbB-ay-UgL"/>
         <segue reference="Cfy-OZ-hKB"/>
     </inferredMetricsTieBreakers>
 </document>
