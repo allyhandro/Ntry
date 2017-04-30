@@ -1,0 +1,65 @@
+<script type="text/javascript" src="/js/registerItems.js"></script>
+<div id="register-active">
+    <div id="register-title">
+        <h1>Register</h1>
+    </div>
+    <div class="register-window-focus">
+        <div class="user-buttons" id="new-client-btn">
+            <span class="entypo-plus-circled"></span>
+            <h4>new client</h4>
+        </div>
+        <div id="item-form-container">
+            <div id="FormInstruction">
+                <div id="item-to-client-title">
+                    <h1>Register Item to <span id="clientName">{{#if client}}{{client}}{{else}}Ally Han{{/if}}</span></h1>
+                </div>
+            </div>
+            <form method = "POST" class="newitem-form" action="/register-items">
+                <div id="errorMsg"></div>
+                <div id="item-list">
+                    <div class="form-group">
+                        <label>packing</label>
+                        <input type="text" name="packing" class="packing">
+                    </div>
+                    <div class="form-group">
+                        <label>type</label>
+                        <input type="text" name="type" class="type">
+                    </div>
+                    <div class="form-group">
+                        <label>dimensions</label>
+                        <input type="number" name="len" class="len" placeholder="length">
+                        <input type="number" name="width" class="width" placeholder="width">
+                        <input type="number" name="height" class="height" placeholder="height">
+                    </div>
+                    <div class="form-group">
+                        <label>title</label>
+                        <input type="text" name="title" class="title">
+                    </div>
+                    <div class="form-group">
+                        <label>artist</label>
+                        <input type="text" name="artist" class="artist">
+                    </div>
+                    <div class="form-group">
+                        <label>location</label>
+                        <input type="text" name="location" class="location">
+                    </div>
+                    <div class="form-group">
+                        <label>description</label>
+                        <input type="text" name="description" class="description">
+                    </div>
+                </div>
+                <div id="addBtnDiv">
+                    <button id="addMoreBtn">
+                        <span class="entypo-plus"></span><h4>add more</h4>
+                    </button>
+                </div>
+            </div>
+    <div id="finishBtnDiv">
+        <button type="submit" id="finish">
+            <h4>finish and print</h4><span class="entypo-right-open-mini"></span>
+        </button>
+    </div>
+        </form>
+    </div>
+</div>
+</div>

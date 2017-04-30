@@ -1,0 +1,44 @@
+{
+  "name": "ntry",
+  "version": "1.0.0",
+  "engines": {
+    "node": "6.9.5",
+    "npm": "3.10.10"
+  },
+  "description": "inventory logistics automation",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0480-008-spring-2017/awh264-final-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0480-008-spring-2017/awh264-final-project/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0480-008-spring-2017/awh264-final-project#readme",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.15.2",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "hbs": "^4.0.1",
+    "mongodb": "^2.2.25",
+    "mongoose": "^4.9.2",
+    "mongoose-url-slugs": "^0.2.1",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.18.0"
+  }
+}

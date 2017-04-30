@@ -1,0 +1,43 @@
+<script type="text/javascript" src="/js/finder.js"></script>
+<div id="find-panel-active">
+    <div id="find-title">
+        <h1>Find</h1>
+    </div>
+    <div id="search-bar">
+        <span class="entypo-search"></span>
+        <form>
+            <div class="form-group">
+                <input type="text" name="usr-query" id="usr-query">
+                <button type="submit">search</button>
+            </div>
+        </form>
+    </div>
+    <div id="find-window">
+        <div id ="find-default-title">
+            <h3>client list</h3>
+        </div>
+        <div id="find-res">
+            {{#each res}}
+                <div class="res">
+                    <div class="client-res" id="{{this}}">
+                        <div class="client-label">
+                            <h5>{{this}}</h5>
+                        </div>
+                    </div>
+                    <div class="client-btns">
+                        <div class="infoBtn" id="{{this}}">
+                            <button>
+                                <span id="{{this}}" class="entypo-vcard"></span>
+                            </button>
+                        </div>
+                        <div class="itemsBtn" id="{{this}}">
+                            <button>
+                                <span id="{{this}}" class="entypo-list"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

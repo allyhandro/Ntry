@@ -1,0 +1,720 @@
+$baseBlue: #6c7bc3;
+$darkBlue: #1d2549;
+$medBlue: #435190;
+$darkBlueGrey: #7b819e;
+$medBlueGrey: #9194a5;
+
+$baseOrange: #ffcc7d;
+$darkOrange: #6c4e21;
+$medOrange: #d3a053;
+$lightOrange: #e8d1ac;
+$creamOrange: #f1e4d0;
+
+$baseYellow: #ffe47d;
+$darkYellow: #6c5c21;
+$medYellow: #d3b853;
+$lightYellow: #e8dcac;
+$creamYellow: #f1ead0;
+
+/* import icon fonts */
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web|Abril+Fatface|Josefin+Sans|Questrial);
+
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+.alert.alert-danger{
+    color: red;
+}
+.content {
+    width: 100%;
+    height: 95vh;
+    padding: 2em;
+    background-color: $creamYellow;
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: $lightYellow;
+}
+
+.container, footer{
+    background-color: $lightYellow;
+}
+
+button {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+input {
+    box-shadow: none;
+    border: none;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+/*footer styling*/
+footer{
+    margin: 1em 1em 1em 1em;
+}
+/*login minimal styling*/
+#user-login-content{
+    display: inline-block;
+    h2{
+        font-family: 'Questrial', serif;
+        color: $darkOrange;
+    }
+    .login-group{
+        margin-bottom: 1em;
+    }
+    input{
+        padding-left: 5px;
+    }
+    #loginBtn{
+        padding-left: 0.5em;
+        padding-top: 3px;
+        width: 5%;
+        background-color: $darkBlueGrey;
+        color: $lightYellow;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+}
+
+/*new-user minimal styling*/
+#new-user-content{
+    #title{
+        color: $darkBlue;
+        font-family: 'Questrial', serif;
+    }
+    #new-user-form{
+        .form-group{
+            margin-bottom: 1em;
+            label{
+                margin-right: 0.5em;
+            }
+            input {
+                padding-right: 5px;
+                text-align: right;
+                width: 15%;
+            }
+        }
+        button{
+            padding-top: 5px;
+            width: 5%;
+            background-color: $darkOrange;
+            color: $lightYellow;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+    }
+}
+
+/*index page styling*/
+.button-link{
+    h4, span{
+        display: inline-block;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+}
+#content-panel-one{
+    width: 100%;
+    height: 40%;
+    vertical-align: top;
+    background-color: $lightOrange;
+    display: inline-block;
+    padding: 2em 0 4em 1em;
+    #media-focus{
+        display: inline-block;
+        background-color: $medBlueGrey;
+        width: 60%;
+        margin-left: 12%;
+        padding: 1.5em 1em 1.5em 1em;
+        #tagline{
+            display:inline-block;
+            margin-left: 5%;
+            margin-right: 15%;
+            h2 {
+                color: $darkBlue;
+            }
+        }
+        #focus-image{
+           display: inline-block;
+        }
+    }
+    #get-started-btn{
+        background-color: $baseYellow;
+        padding: 0.5em 0.5em 0.5em 1em;
+        width: 13%;
+        margin-left: 30%;
+        position: absolute;
+        top: 28%;
+        span{
+            color: $darkYellow;
+            position: relative;
+            font-size: 28px;
+            top: 2px;
+        }
+        h4{
+            margin-right: 0.5em;
+            color: $darkYellow;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 28px;
+        }
+    }
+}
+#learn-more-panel{
+    width: 100%;
+    height: 30%;
+    background-color: $creamYellow;
+    padding: 2em 1em 2em 3em;
+    #steps{
+        width: 100%;
+        margin-left: 10%;
+        .step-row{
+            display: inline-block;
+            margin-right: 10%;
+            .step-label{
+                display: inline-block;
+                width: 80%;
+                margin-top: 1em;
+            }
+        }
+    }
+    img{
+        height: 35px;
+        color: $darkBlue;
+        display: inline-block;
+    }
+    p{
+        display: inline-block;
+        margin-left: 0.5em;
+        font-size: 22px;
+        font-family: 'Titillium Web', 'sans-serif';
+        color: $darkBlue;
+    }
+    #learn-more-btn{
+        background-color: $baseBlue;
+        width: 4%;
+        padding-left: 1em;
+        margin-left: 30%;
+        h4{
+            color: $creamYellow;
+        }
+    }
+}
+#app-marketing{
+    width: 100%;
+    height: 30%;
+    background-color: $medYellow;
+    display: inline-block;
+    padding: 1em 1em 2em 1em;
+    #app-marketing-statement{
+        margin-left: 10%;
+        margin-right: 25%;
+        display: inline-block;
+        h3{
+            color: $darkYellow;
+            font-family: 'Questrial', 'serif';
+            font-size: 30px;
+            margin-top: 1.4em;
+        }
+    }
+    #app-market-img{
+        display: inline-block;
+    }
+}
+#web-marketing{
+    width: 100%;
+    height: 30%;
+    background-color: $darkBlueGrey;
+    display: inline-block;
+    padding: 2em 1em 2em 1em;
+    #web-market-img{
+        display: inline-block;
+        margin-left: 7%;
+        margin-right: 17%;
+    }
+    #web-marketing-statement{
+        display: inline-block;
+        h3{
+            color: $darkBlue;
+            font-size: 30px;
+            font-family: 'Questrial', 'serif';
+        }
+    }
+}
+
+
+
+#navigation{
+    width: 100%;
+    background-color: $medBlueGrey;
+    opacity: 0.8;
+    padding: 0;
+    a {
+        margin-top: 3%;
+        color: $darkBlue;
+        font-size: 22px;
+        position: relative;
+        top: 1.1em;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    a:hover{
+        color: $creamYellow;
+        text-decoration: none;
+    }
+    h1 {
+        font-family: 'Abril Fatface', cursive;
+        font-size: 45px;
+        margin-left: 0.8em;
+        color: $baseOrange;
+        position: relative;
+        top: -8px;
+    }
+}
+
+#item-form-container{
+    width: 65%;
+    margin-left: 15%;
+    background: $creamOrange;
+    text-align: center;
+    padding: 1em 0 0 0;
+    .form-group{
+        margin-bottom: 1em;
+        input {
+            padding-left: 5px;
+            margin-left: 0.5 em;
+        }
+    }
+    hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), $darkBlue, rgba(0, 0, 0, 0));
+    }
+}
+
+#addBtnDiv{
+    margin-top: 1em;
+    background-color: $medBlueGrey;
+    h4 {
+        color: $creamYellow;
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    span {
+        color: $creamYellow;
+        font-size: 1.2em;
+    }
+}
+#finishBtnDiv{
+    margin-left: 65%;
+    h4{
+        color: $baseOrange;
+        display: inline;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    span{
+        position: relative;
+        top: 4px;
+        color: $baseOrange;
+        font-size: 2em;
+    }
+}
+
+#addMoreBtn {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+#finish{
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.user-buttons{
+    margin-left: 1.5em;
+    .user-button-icon {
+        margin-left: 0.5em;
+        color: $darkBlue;
+    }
+    h4 {
+        display: inline-block;
+        margin: 0.5em;
+    }
+}
+
+.user-buttons:hover{
+    .user-button-icon:hover {
+        color: $lightYellow;
+    }
+
+    color: $lightYellow;
+}
+
+/* register window styling*/
+.register-window-focus{
+    background-color: $medBlue;
+    padding-bottom: 2em;
+    .user-buttons{
+        color: $lightYellow;
+        margin-left: 20%;
+    }
+}
+
+#register-active{
+    vertical-align: top;
+    background-color: $baseBlue;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    padding: 1em 0 2em 0;
+    display: inline-block;
+
+    #register-title {
+        margin-left:12%;
+        h1 {
+            font-size: 45px;
+        }
+    }
+
+    h1 {
+        font-family: 'Questrial', sans-serif;
+        color: $creamOrange;
+        margin-left: 1em;
+    }
+    #new-client-box{
+        display: inline-block;
+        background-color: $medBlueGrey;
+        width: 50%;
+        margin-left: 25%;
+        display: inline-block;
+        padding: 0 1em 1em 3em;
+
+        #rate-group{
+            input{
+                width: 10%;
+            }
+        }
+        #name-group, #email-group{
+            margin-left: 7px;
+            input{
+                width: 61%;
+            }
+        }
+        .form-group{
+            margin-bottom: 1em;
+            label {
+                margin-right: 4px;
+                font-size: 18px;
+            }
+            input{
+                padding-left: 5px;
+                text-align: left;
+                width: 60%;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .reg-client-submit{
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        top: 3.5em;
+    }
+
+    #item-to-client-title{
+        h1{
+            color: $darkBlue;
+        }
+    }
+}
+
+#client-form-frame {
+    background-color: $medBlueGrey;
+    height: 40vh;
+    text-align: center;
+    margin-top: 5vh;
+    margin-left: 7vh;
+    overflow: auto;
+    h1, label {
+        color: $creamOrange;
+    }
+    input {
+        color: $darkBlue;
+        text-align: right;
+    }
+    .form-group{
+        float: right;
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+}
+
+#nextBtn {
+    position: relative;
+    background: none;
+    border: none;
+    box-shadow: none;
+    font-size: 6em;
+    padding: 2vh 0;
+    margin-left: 10px;
+    color:$baseOrange;
+}
+
+#nextBtn:hover{
+    color:$darkOrange;
+}
+
+.hidden {
+    display: none;
+}
+
+#registerBtn {
+    color: $darkBlue;
+    font-size: 10em;
+}
+
+#findBtn {
+    color: $darkOrange;
+    font-size: 10em;
+}
+
+#register-panel {
+    vertical-align: top;
+    display: inline-block;
+    background: $baseBlue;
+    height: 100vh;
+    width: 50vw;
+    #register-title{
+        margin-left: 30%;
+        margin-top: 20%;
+        h1 {
+            font-size: 80px;
+            font-family: 'Questrial', sans-serif;
+            color: $creamOrange;
+            font-weight: lighter;
+        }
+    }
+    #register-window{
+        margin-left: 30%;
+    }
+}
+
+#find-panel {
+    vertical-align: top;
+    display: inline-block;
+    background: $baseOrange;
+    height: 100vh;
+    width: 50vw;
+    margin-left: -4px;
+    h1 {
+        margin-left: 37%;
+        margin-top: 20%;
+        color: $darkBlueGrey;
+        font-family: 'Questrial', sans-serif;
+        font-size: 70px;
+        font-weight: lighter;
+    }
+    #search-icon{
+        display: inline-block;
+        margin-left: 40%;
+    }
+}
+
+#register-panel-active{
+    background: $baseBlue;
+    overflow: auto;
+    padding:0;
+    height:100vh;
+    width: 100vw;
+}
+
+#user-portal{
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#find-panel-active{
+    background: $baseOrange;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: -20px;
+    h1 {
+        position: relative;
+        top: 0.5em;
+        margin-left: 15%;
+        color: $medBlueGrey;
+    }
+}
+
+#search-bar{
+    display: inline-block;
+    margin-left: 20%;
+    span{
+        display: inline-block;
+        font-size: 2em;
+        position: relative;
+        top: 5px;
+        color: $darkOrange;
+        margin-right: 0.5em;
+    }
+    input{
+        width: 20em;
+    }
+    form{
+        display: inline-block;
+    }
+}
+
+#find-window {
+    background-color: $medOrange;
+    position: relative;
+    top: 1em;
+    width: 100vw;
+    padding: 1em 2em 2em 0;
+}
+
+#find-default-title{
+    margin-left: 20%;
+    color: $baseYellow;
+    h3 {
+        margin-top: 0;
+        font-weight: lighter;
+    }
+}
+
+#find-res{
+    background-color: $lightYellow;
+    margin-left: 20%;
+    width: 40em;
+    padding: 1em 1em 1em 1em;
+}
+
+.client-res{
+    display: inline-block;
+    background-color: $creamYellow;
+    width: 75%;
+    margin-left: 5%;
+    margin-bottom: 1em;
+    h5 {
+        display: inline-block;
+        margin-left: 1em;
+        color: $darkBlueGrey
+    }
+
+    .client-label{
+        display: inline-block;
+    }
+}
+.client-btns {
+    display: inline-block;
+    margin-left: .3em;
+    .infoBtn, .itemsBtn{
+        display: inline-block;
+        text-align: left;
+        color: $darkOrange;
+        margin-right: 0;
+        font-size: 2em;
+    }
+}
+
+#client-item-list{
+    background-color: $baseYellow;
+    height: 100vh;
+    width: 100vw;
+    padding: 1em;
+    #client-name{
+        color: $darkYellow;
+        margin-left: 15%;
+    }
+}
+
+#filter-bar{
+    display: inline-block;
+    background-color: $medYellow;
+    width: 100%;
+    padding-left: 5%;
+}
+
+.filter{
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 6%;
+    position: relative;
+    top: 5px;
+
+    p {
+        color: $darkYellow;
+        font-size: 15px;
+    }
+}
+
+.filterBtn{
+    display: inline-block;
+    button, p, span {
+        display: inline-block;
+    }
+}
+#item-box{
+    background-color: $lightYellow;
+    width: 75%;
+    margin-left: 13%;
+    padding-bottom: 2em;
+    max-width: 55em;
+}
+
+.res {
+    padding-left: 1em;
+}
+.item-res {
+    display: inline-block;
+    background-color: $creamYellow;
+    margin-top: 1em;
+    margin-left: 3%;
+    width: 75%;
+    padding-left: 1em;
+    h5 {
+        display: inline-block;
+        color: $darkOrange;
+    }
+
+    .item-label {
+        display: inline-block;
+    }
+}
+
+.item-btns{
+    display: inline-block;
+    margin-left: 2%;
+    .item-infoBtn, .delete-itemBtn {
+        display: inline-block;
+        color: $darkYellow;
+        font-size: 1.5em;
+    }
+}
+
+
+
+
+

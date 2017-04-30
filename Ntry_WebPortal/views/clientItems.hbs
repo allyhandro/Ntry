@@ -1,0 +1,56 @@
+<div id="client-item-list">
+    <div id="client-name">
+        <h1>{{clientName}}'s Items</h1>
+    </div>
+    <div id="item-box">
+        <div id="filter-bar">
+            <div class="filter">
+                <button class="filterBtn">
+                    <p>name</p>
+                    <span class="entypo-down-open-mini"></span>
+                </button>
+            </div>
+            <div class="filter">
+                <button class="filterBtn">
+                    <p>dimension</p>
+                    <span class="entypo-down-open-mini"></span>
+                </button>
+            </div>
+            <div class="filter">
+                <button class="filterBtn">
+                    <p>packing</p>
+                    <span class="entypo-down-open-mini"></span>
+                </button>
+            </div>
+            <div class="filter">
+                <button class="filterBtn">
+                    <p>location</p>
+                    <span class="entypo-down-open-mini"></span>
+                </button>
+            </div>
+        </div>
+        <div id="filter-res">
+            {{#each item}}
+                <div class="res">
+                    <div class="item-res" id="{{this}}">
+                        <div class="item-label">
+                            <h5>{{this}}</h5>
+                        </div>
+                    </div>
+                    <div class="item-btns">
+                        <div class="item-infoBtn" id="{{this}}">
+                            <button>
+                                <span id="{{this}}" class="fontawesome-pencil"></span>
+                            </button>
+                        </div>
+                        <div class="delete-itemBtn" id="{{this}}">
+                            <button>
+                                <span id="{{this}}" class="fontawesome-trash"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

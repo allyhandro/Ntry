@@ -1,0 +1,32 @@
+<!-- <script src="/js/login-validation.js"></script> -->
+<div class="content" id="user-login-content">
+    <h2>User Login</h2>
+    <div class="row">
+        <div class="col-lg-12" id="errorMsg">
+             {{#if errors}}
+                {{#each errors}}
+                    <div class="alert alert-danger">{{msg}}</div>
+                {{/each}}
+            {{/if}}
+        </div>
+    </div>
+    <div id="login-form">
+        <form method="POST" action="/users/login">
+            <div class="login-group">
+                <label>Username</label>
+                <input type="text" class="form-control" placeholder="username" name="username" id="username">
+            </div>
+            <div class = "login-group">
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="password" name="password" id="password">
+            </div>
+            <div id="loginBtn">
+                <button type="submit" id="loginBtn" class="btn btn-default">Login</button>
+            </div>
+        </form>
+    </div>
+    <div id="new-user">
+        <h5>not a user?</h5>
+        <a href="/users/new-user">register</a>
+    </div>
+</div>
