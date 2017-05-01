@@ -21,11 +21,21 @@ const LocalStrategy = require('passport-local').Strategy;
 const expressValidator = require('express-validator');
 
 
-// Mongo / MongoDB
-require('./db');
-const mongoose = require('mongoose');
-const User = mongoose.model('User');
-const Client = mongoose.model('Client');
+// Mongo / MongoDB set up
+const mongoose = require('mongoose'),
+    URLSlugs = require('mongoose-url-slugs');
+const bcrypt = require('bcryptjs');
+mongoose.Promise = global.Promise;
+var url = process.env.MONGOLAB_URI;
+mongoose.connect(url, function(err, db){
+    if (err){
+        console.log('Unable to connect to server...');
+        console.log(err);
+    } else {
+        console.log('connection established to ' + url);
+    }
+});
+
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: false}));

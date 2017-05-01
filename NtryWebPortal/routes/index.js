@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const mongoose = require('mongoose');
-require('../db');
-const User = mongoose.model('User');
-const Client = mongoose.model('Client');
-const Item = mongoose.model('Item');
+// const mongoose = require('mongoose');
+// require('../db');
+const User = require('../models/user');
+const Client = require('../models/client');
+const Item = require('../models/item');
 const qrCode = require('qrcode');
 
 // homepage
@@ -36,7 +36,7 @@ router.get('/print-labels', function (req, res){
                 if (err){
                     console.log(err);
                 } else {
-                    for (let j = 0; j < items.length; j++){
+                    for (var j = 0; j < items.length; j++){
                         const item = {};
                         item['id'] = items[j].id;
                         item['title'] = items[j].title;
@@ -55,8 +55,8 @@ router.get('/register-items', ensureAuthenticated, function(req, res){
 
 router.post('/register-items', ensureAuthenticated, function (req, res){
     const client_id = req.cookies.clientId;
-    let items = req.body;
-    let sqFt = 0;
+    const items = req.body;
+    var sqFt = 0;
     items.forEach((item) => {
         const newItem = new Item({
             client_id: client_id,
@@ -96,7 +96,7 @@ router.post('/register-items', ensureAuthenticated, function (req, res){
 // User Portal Routes
 //////////////////////////////////
 router.get('/register', ensureAuthenticated, function (req, res){
-    res.render('userPortal', {layout:'userLayout'});
+    res.render('user-portal', {layout:'userLayout'});
 });
 
 router.get('/find', ensureAuthenticated, function (req, res){
@@ -135,7 +135,7 @@ router.get('/:client/items', ensureAuthenticated, function (req, res) {
                 if (err){
                     console.log(err);
                 }else {
-                    for (let i = 0; i < items.length; i++){
+                    for (var i = 0; i < items.length; i++){
                         console.log(items[i].title);
                         itemList.push(items[i].title);
                     }
@@ -146,7 +146,7 @@ router.get('/:client/items', ensureAuthenticated, function (req, res) {
     });
 });
 
-router.get('/:username', ensureAuthenticated, function (req, res){
+router.get('/user-portal/:username', ensureAuthenticated, function (req, res){
     User.findOne({slug: req.params.slug}, (err, user, count) =>{
         if (err){
             res.render('error', {'error': error});
@@ -167,7 +167,7 @@ router.post('/register-client', ensureAuthenticated, function (req, res){
     req.checkBody('email', 'Email is required').notEmpty();
     req.checkBody('rate', 'Rate is required.').notEmpty();
 
-    let errors = req.validationErrors();
+    const errors = req.validationErrors();
     if (errors){
         res.render('newClient', {layout: 'userLayout', errors:errors});
     } else {
