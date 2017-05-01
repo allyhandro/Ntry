@@ -8,10 +8,15 @@
 
 import UIKit
 
+
+
 class ScanViewController: UIViewController{
     
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet weak var artLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    
     
     override func viewDidLoad() {
         if self.revealViewController() != nil {

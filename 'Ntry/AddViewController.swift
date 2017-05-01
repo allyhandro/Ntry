@@ -10,8 +10,8 @@ import Foundation
 
 class AddViewController: UIViewController{
     
-    
     @IBOutlet weak var menuButton: UIBarButtonItem!
+
     
     @IBOutlet weak var artImage: UIImageView!
     
