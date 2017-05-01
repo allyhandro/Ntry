@@ -7,6 +7,11 @@ const Client = require('../models/client');
 const Item = require('../models/item');
 const qrCode = require('qrcode');
 
+// quic styling
+router.get('/item-to-client', function (req, res){
+    res.render('itemToClient.hbs', {layout: 'userLayout', client: 'John Snow'});
+});
+
 // homepage
 router.get('/', function (req, res){
     res.render('index', {layout: 'layout'});
@@ -96,7 +101,7 @@ router.post('/register-items', ensureAuthenticated, function (req, res){
 // User Portal Routes
 //////////////////////////////////
 router.get('/register', ensureAuthenticated, function (req, res){
-    res.render('user-portal', {layout:'userLayout'});
+    res.render('userPortal', {layout:'userLayout'});
 });
 
 router.get('/find', ensureAuthenticated, function (req, res){
@@ -116,7 +121,6 @@ router.get('/find', ensureAuthenticated, function (req, res){
             });
             res.render('find', {layout:'userLayout', res: userRes});
         }
-        // res.render('find', {layout:'userLayout', res: userRes});
     });
 });
 

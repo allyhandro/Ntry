@@ -16,6 +16,39 @@ router.get('/', (req, res)=>{
     res.json({message: "Welcome to 'Ntry's REST API!"});
 });
 
+// find all items
+router.route('/items/_find')
+    .get(function(req, res) {
+        Item.find(function(err, items) {
+            if (err) res.send(err);
+            res.json(items);
+        });
+    });
+
+// find item matching item_id
+router.route('/items/:item_id/_findOne')
+    .get(function(req, res){
+        Item.findById(req.params.item_id, function (err, item) {
+            if (err) res.send(err);
+            res.json(item);
+        });
+    });
+
+// find item and update with body text
+router.route('/items/:item_id/_move')
+    .put(function (req, res) {
+        Item.findById(req.params.item_id, function (err, item) {
+            if (err) res.send(err);
+        item.location = req.body.location;
+        console.log(item.location);
+            item.save(function(err){
+                if(err) res.send(err);
+                res.json({message: 'item updated', item: item});
+            });
+        })
+    });
+
+
 module.exports = router;
 
 // formats time for logger
