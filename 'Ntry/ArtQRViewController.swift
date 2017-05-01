@@ -8,7 +8,10 @@
 import UIKit
 import AVFoundation
 
+
 protocol ArtQRViewControllerDelegate:class{
+    func addItemViewController(controller:ArtQRViewController,didFinishEnteringItem item:NSString)
+    
 }
 
 class ArtQRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate, ArtQRViewControllerDelegate{
@@ -90,6 +93,9 @@ class ArtQRViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         // Dispose of any resources that can be recreated.
     }
     
+    func addItemViewController(controller: ArtQRViewController, didFinishEnteringItem item: NSString) {
+        
+    }
     
     
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
