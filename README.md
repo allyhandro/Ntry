@@ -11,15 +11,49 @@ Accesses to the database from the iOS application are done through HTTP requests
 `https://ntry.herokuapp.com/api`
 
 will follow this general naming scheme:
-** disclaimer: these routes will change as functionality increases for security reasons, this is the current naming scheme as of 5/1/17
+disclaimer: these routes will change as functionality increases for security reasons, this is the current naming scheme as of 5/1/17
 
 | HTTP Method   | Route           | Description  |
 | ------- |:----------------------------:| ---------------------------:|
-| GET     | /items                       | get all items               |
-| GET     | /items/590687a0f5a5ee65      | get one item for ObjectID   |
-| PUT     | /items/590687a0f5a5ee65      | update item for ObjectID    |
+| GET     | /items/_find                          | get all items               |
+| GET     | /items/590687a0f5a5ee65/_findOne      | get one item for ObjectID   |
+| PUT     | /items/590687a0f5a5ee65/_move         | update item for ObjectID    |
 
 
+I suggest using this library to wrap the HTTP requests in swift 3:
+https://github.com/Alamofire/Alamofire
+
+#### Usage with Alamofire (probably)
+Any GET request:
+```
+Alamofire.request('https://ntry/herokuapp.com/api/items/<item_id>/_find').responseData { response in
+  if let JSON = response.result.value{
+    print("JSON: \(JSON)")
+  }
+}
+```
+
+for PUT requests:
+* header Content-Type must be set to application/x-www-form-urlencoded
+* new location text should be sent over the request body with a tag of 'location':
+```
+// from https://github.com/Alamofire/Alamofire#http-methods //
+let url = URL(string: "https://ntry/herokuapp.com/api/items/")!
+var urlRequest = URLRequest(url: url)
+urlRequest.httpMethod = "PUT"
+
+let parameters = ["location": "new location"]
+
+do {
+    urlRequest.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
+} catch {
+    // No-op
+}
+
+urlRequest.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+
+Alamofire.request(urlRequest)
+```
 
 
 
