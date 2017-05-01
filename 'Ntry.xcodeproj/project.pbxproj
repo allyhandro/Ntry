@@ -119,6 +119,8 @@
 			children = (
 				82EBC18B1EA6CC1F008A7725 /* Main.storyboard */,
 				82EBC1871EA6CC1F008A7725 /* AppDelegate.swift */,
+				82EBC1891EA6CC1F008A7725 /* ViewController.swift */,
+				82EBC1C01EA6CFCE008A7725 /* MenuTableViewController.swift */,
 				82EBC1B51EA6CCBC008A7725 /* HomeViewController.swift */,
 				82EBC1B71EA6CCD5008A7725 /* ClientsTableViewController.swift */,
 				82EBC1B91EA6CD6D008A7725 /* ArtTableViewController.swift */,
@@ -127,8 +129,6 @@
 				825260321EB29463008292B2 /* ArtQRViewController.swift */,
 				82EBC1C91EA6E514008A7725 /* AddViewController.swift */,
 				82EBC1CB1EA6E51E008A7725 /* SettingsViewController.swift */,
-				82EBC1891EA6CC1F008A7725 /* ViewController.swift */,
-				82EBC1C01EA6CFCE008A7725 /* MenuTableViewController.swift */,
 				82EBC1931EA6CC1F008A7725 /* Info.plist */,
 				82EBC18E1EA6CC1F008A7725 /* Assets.xcassets */,
 				82EBC1BB1EA6CEFC008A7725 /* SWReveal */,
