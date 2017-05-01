@@ -1,5 +1,5 @@
 //
-//  QRCodeViewController.swift
+//  ArtQRViewController.swift
 //  'Ntry
 //
 //  Created by Caroline Lai on 4/27/17.
@@ -8,19 +8,31 @@
 import UIKit
 import AVFoundation
 
-class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+
+protocol ArtQRViewControllerDelegate:class{
+    func addItemViewController(controller:ArtQRViewController,didFinishEnteringItem item:NSString)
     
+}
+
+class ArtQRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate, ArtQRViewControllerDelegate{
+
+    
+    weak var artLabelDelegate: ArtQRViewControllerDelegate?
     @IBOutlet var messageLabel:UILabel!
     @IBOutlet var topbar: UIView!
     var captureSession: AVCaptureSession?
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var qrCodeFrameView: UIView?
     
+    let itemToPasssPack = "Pass this Back to ScanViewController"
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Get an instance of the AVCaptureDevice class to initialize a device object and provide the video as the media type parameter.
         let captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
+        artLabelDelegate = self;
         
         do {
             // Get an instance of the AVCaptureDeviceInput class using the previous device object.
@@ -41,7 +53,11 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             
             videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
             videoPreviewLayer?.videoGravity = AVLayerVideoGravityResizeAspectFill
-            videoPreviewLayer?.frame = view.layer.bounds
+            
+            //Setting frame of camera
+            let screenWidth = UIScreen.main.bounds.size.width
+                
+            videoPreviewLayer?.frame = CGRect(x:0, y:55, width:screenWidth, height:200)
             view.layer.addSublayer(videoPreviewLayer!)
             
             
@@ -70,21 +86,27 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             return
         }
         
-        
-        
+
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    func addItemViewController(controller: ArtQRViewController, didFinishEnteringItem item: NSString) {
+        
+    }
+    
+    
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
         
         // Check if the metadataObjects array is not nil and it contains at least one object.
+        
+        
         if metadataObjects == nil || metadataObjects.count == 0 {
             qrCodeFrameView?.frame = CGRect.zero
             messageLabel.text = "No QR code is detected"
+            
             return
         }
         
@@ -99,12 +121,16 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             
             if metadataObj.stringValue != nil {
                 messageLabel.text = metadataObj.stringValue
+                
             }
         }
     }
     
-    
-
+    @IBAction func selectButton(_ sender: Any) {
+        let myVC = storyboard?.instantiateViewController(withIdentifier: "ScanView") as! ScanViewController
+        myVC.artLabel.text = messageLabel.text!
+        navigationController?.pushViewController(myVC, animated: true)
+    }
     
 
     /*

@@ -16,6 +16,7 @@ class ArtTableViewController: UITableViewController{
     
     override func viewDidLoad() {
         if self.revealViewController() != nil {
+            self.revealViewController().rearViewRevealWidth = 165
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
