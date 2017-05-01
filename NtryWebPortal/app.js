@@ -11,15 +11,6 @@ app.use(express.static(publicPath));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-// set MIME types for icons
-app.use('/fonts', express.static('./node_modules/font-awesome/css'));
-app.use('/fonts', express.static('./node_modules/font-awesome/fonts'));
-// express.mime.type['.eot'] = 'application/vnd.ms-fontobject';
-// express.mime.type['.woff'] = 'application/font-woff';
-// express.mime.type['.ttf'] = 'application/x-font-truetype';
-// express.mime.type['.svg'] = 'application/image/svg+xml';
-// express.mime.type['.otf'] = 'application/x-font-opentype';
-
 
 // from https://github.com/bradtraversy/loginapp/blob/master/app.js
 const cookieParser = require('cookie-parser');
@@ -86,8 +77,10 @@ app.use(function (req, res, next) {
 // Routes
 const routes = require('./routes/index');
 const users = require('./routes/users');
+const api = require('./routes/api');
 app.use('/', routes);
 app.use('/users', users);
+app.use('/api', api);
 
 
 // Set Port

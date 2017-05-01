@@ -5,6 +5,7 @@ require('../db');
 const User = mongoose.model('User');
 const Client = mongoose.model('Client');
 const Item = mongoose.model('Item');
+const qrCode = require('qrcode');
 
 // homepage
 router.get('/', function (req, res){
@@ -25,7 +26,27 @@ router.get('/mobile', function (req, res){
 });
 
 router.get('/print-labels', function (req, res){
-    res.render('labels', {layout: 'userLayout'});
+    const clientName = req.cookies.clientName;
+    Client.findOne({name: req.cookies.clientName}, (err, client)=>{
+        if (err){
+            console.log(err);
+        } else {
+            const items = [];
+            Item.find({client_id: client._id}, (err, items) =>{
+                if (err){
+                    console.log(err);
+                } else {
+                    for (let j = 0; j < items.length; j++){
+                        const item = {};
+                        item['id'] = items[j].id;
+                        item['title'] = items[j].title;
+                        item['location'] = items[j].location;
+                    }
+                    res.render('labels', {layout:'userLayout', item: items, clientName: clientName});
+                }
+            });
+        }
+    });
 });
 
 router.get('/register-items', ensureAuthenticated, function(req, res){

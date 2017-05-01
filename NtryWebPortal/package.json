@@ -35,7 +35,8 @@
     "mongoose-url-slugs": "^0.2.1",
     "passport": "*",
     "passport-http": "*",
-    "passport-local": "*"
+    "passport-local": "*",
+    "qrcode": "^0.8.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
