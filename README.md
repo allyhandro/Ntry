@@ -3,7 +3,24 @@ Final Project - 'Ntry
 #### Members and Responsibilities
 * Ally Han (awh264) - web application deployment / database integration
 * Curtis Mann (cmm 893) - QR code integration
-* Caroline Lai (cl2852) - iOS UXD 
+* Caroline Lai (cl2852) - iOS UXD
+
+## DevNotes
+Accesses to the database from the iOS application are done through HTTP requests through an API. The base request URL is
+
+`https://ntry.herokuapp.com/api`
+
+will follow this general naming scheme:
+** disclaimer: these routes will change as functionality increases for security reasons, this is the current naming scheme as of 5/1/17
+
+| HTTP Method   | Route           | Description  |
+| ------- |:----------------------------:| ---------------------------:|
+| GET     | /items                       | get all items               |
+| GET     | /items/590687a0f5a5ee65      | get one item for ObjectID   |
+| PUT     | /items/590687a0f5a5ee65      | update item for ObjectID    |
+
+
+
 
 
 ## Project Description Overview
@@ -181,6 +198,11 @@ An Example Location:
 
 ## References Used
 * https://davidshimjs.github.io/qrcodejs/
+  * qr code generating library
 * http://sass-lang.com/
+  * css preprocessor used to style site
+* http://www.iosinsight.com/backend-rest-api-nodejs/
+  * used to connect mobile app to database via REST api
+
 
 

@@ -1,6 +1,6 @@
 function handleAddMore(evt){
     evt.preventDefault();
-    const list = document.querySelector('#item-list');
+    const list = document.querySelector('#new-item-form-container');
     const line = document.createElement("hr");
     list.appendChild(line);
 

@@ -11,15 +11,6 @@ app.use(express.static(publicPath));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-// set MIME types for icons
-app.use('/fonts', express.static('./node_modules/font-awesome/css'));
-app.use('/fonts', express.static('./node_modules/font-awesome/fonts'));
-// express.mime.type['.eot'] = 'application/vnd.ms-fontobject';
-// express.mime.type['.woff'] = 'application/font-woff';
-// express.mime.type['.ttf'] = 'application/x-font-truetype';
-// express.mime.type['.svg'] = 'application/image/svg+xml';
-// express.mime.type['.otf'] = 'application/x-font-opentype';
-
 
 // from https://github.com/bradtraversy/loginapp/blob/master/app.js
 const cookieParser = require('cookie-parser');
@@ -30,11 +21,21 @@ const LocalStrategy = require('passport-local').Strategy;
 const expressValidator = require('express-validator');
 
 
-// Mongo / MongoDB
-require('./db');
-const mongoose = require('mongoose');
-const User = mongoose.model('User');
-const Client = mongoose.model('Client');
+// Mongo / MongoDB set up
+const mongoose = require('mongoose'),
+    URLSlugs = require('mongoose-url-slugs');
+const bcrypt = require('bcryptjs');
+mongoose.Promise = global.Promise;
+var url = process.env.MONGOLAB_URI;
+mongoose.connect(url, function(err, db){
+    if (err){
+        console.log('Unable to connect to server...');
+        console.log(err);
+    } else {
+        console.log('connection established to ' + url);
+    }
+});
+
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: false}));
@@ -86,8 +87,10 @@ app.use(function (req, res, next) {
 // Routes
 const routes = require('./routes/index');
 const users = require('./routes/users');
+const api = require('./routes/api');
 app.use('/', routes);
 app.use('/users', users);
+app.use('/api', api);
 
 
 // Set Port

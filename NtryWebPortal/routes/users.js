@@ -3,9 +3,12 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
-require('../db');
-const Client = mongoose.model('Client');
-const User = mongoose.model('User');
+
+const Client = require('../models/client');
+const User = require('../models/user')
+// require('../db');
+// const Client = mongoose.model('Client');
+// const User = mongoose.model('User');
 
 // Register new user
 router.get('/new-user', function (req, res){
@@ -29,7 +32,7 @@ router.post('/new-user', function (req, res){
     req.checkBody('password', 'Password is required').notEmpty();
     req.checkBody('password2', 'Passwords do not match').equals(req.body.password);
 
-    let errors = req.validationErrors();
+    const errors = req.validationErrors();
 
     if (errors){
         res.render('newUser', {errors: errors});
@@ -95,7 +98,7 @@ router.post('/login', passport.authenticate('local', {failureRedirect:'/users/lo
                 res.render('login', {'errors': err});
             } else {
                 res.cookie('userId', user._id);
-                res.redirect('/' + user.slug);
+                res.redirect('/user-portal/' + user.slug);
             }
         });
     });
