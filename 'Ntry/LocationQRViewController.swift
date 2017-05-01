@@ -5,13 +5,11 @@
 //  Created by Caroline Lai on 4/27/17.
 //  Copyright © 2017 Caroline Lai. All rights reserved.
 //
+
 import UIKit
 import AVFoundation
 
-
 protocol LocationQRViewControllerDelegate:class{
-    func addItemViewController(controller:LocationQRViewController,didFinishEnteringItem item:NSString)
-    
 }
 
 class LocationQRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate, LocationQRViewControllerDelegate{
@@ -92,11 +90,7 @@ class LocationQRViewController: UIViewController, AVCaptureMetadataOutputObjects
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func addItemViewController(controller: LocationQRViewController, didFinishEnteringItem item: NSString) {
-        
-    }
-    
+
     
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
         

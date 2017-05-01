@@ -177,28 +177,8 @@
                                             <segue destination="wyh-ht-G0V" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="lS8-9R-JSL"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="45" id="24C-9N-tO5">
-                                        <rect key="frame" x="0.0" y="231" width="375" height="45"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="24C-9N-tO5" id="wGh-OH-Fb3">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59K-nP-Vcg">
-                                                    <rect key="frame" x="21" y="12" width="156" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
-                                                    <color key="textColor" red="0.94598263500000002" green="0.91928595300000004" blue="0.81474971770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="grF-Eq-SOq" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="VbS-ky-Qtr"/>
-                                        </connections>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="45" id="ywX-cP-jBH">
-                                        <rect key="frame" x="0.0" y="276" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="231" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ywX-cP-jBH" id="5ez-O0-BPd">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
@@ -428,46 +408,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="znO-VU-m0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3996" y="373"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="xmh-DB-Qte">
-            <objects>
-                <navigationController id="grF-Eq-SOq" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VF5-2G-CYi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="dAQ-6f-tNp" kind="relationship" relationship="rootViewController" id="tLy-Wp-Cif"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MOE-3R-89c" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2250" y="1759"/>
-        </scene>
-        <!--Settings-->
-        <scene sceneID="kQX-rH-Z3z">
-            <objects>
-                <viewController id="dAQ-6f-tNp" customClass="SettingsViewController" customModule="_Ntry" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="DsJ-I7-8Ww"/>
-                        <viewControllerLayoutGuide type="bottom" id="HPe-5s-wRr"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bne-LZ-hpE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Settings" id="35V-Ms-djx">
-                        <barButtonItem key="leftBarButtonItem" image="menu" id="NpE-zl-0wt"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="menuButton" destination="NpE-zl-0wt" id="YzV-xZ-05K"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rSG-7u-BcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3150" y="2006"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oKo-9V-dT3">
