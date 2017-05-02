@@ -127,9 +127,7 @@ class ArtQRViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
     }
     
     @IBAction func selectButton(_ sender: Any) {
-        let myVC = storyboard?.instantiateViewController(withIdentifier: "ScanView") as! ScanViewController
-        myVC.artLabel.text = messageLabel.text!
-        navigationController?.pushViewController(myVC, animated: true)
+        self.performSegue(withIdentifier: "unwindToMenu", sender: self)
     }
     
 

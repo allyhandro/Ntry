@@ -127,9 +127,8 @@ class LocationQRViewController: UIViewController, AVCaptureMetadataOutputObjects
     }
     
     @IBAction func selectButton(_ sender: Any) {
-        let myVC = storyboard?.instantiateViewController(withIdentifier: "ScanView") as! ScanViewController
-        myVC.locationLabel.text = messageLabel.text!
-        navigationController?.pushViewController(myVC, animated: true)
+        self.performSegue(withIdentifier: "unwindToMenu2", sender: self)
+
     }
     
     

@@ -36,5 +36,16 @@ class ScanViewController: UIViewController{
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func unwindToMenu(segue: UIStoryboardSegue) {        
+        let view2:ArtQRViewController = segue.source as! ArtQRViewController
+        
+        artLabel.text = view2.messageLabel.text
+    }
+    
+    @IBAction func unwindToMenu2(segue: UIStoryboardSegue) {
+        let view2:LocationQRViewController = segue.source as! LocationQRViewController
+        
+        locationLabel.text = view2.messageLabel.text
+    }
 
 }
