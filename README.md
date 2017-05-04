@@ -19,7 +19,8 @@ will follow this general naming scheme:
 | GET     | /items/590687a0f5a5ee65      | get one item for ObjectID   |
 | PUT     | /items/590687a0f5a5ee65      | update item for ObjectID    |
 
-
+====
+a note on deployment: currently deployed on heroku witht he Sandbox plan as mLab Heroku add-on, this will need to be changed if project moves to production level, but for now should be ok
 
 
 
