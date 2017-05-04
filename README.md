@@ -15,13 +15,67 @@ will follow this general naming scheme:
 
 | HTTP Method   | Route           | Description  |
 | ------- |:----------------------------:| ---------------------------:|
-| GET     | /items                       | get all items               |
-| GET     | /items/590687a0f5a5ee65      | get one item for ObjectID   |
-| PUT     | /items/590687a0f5a5ee65      | update item for ObjectID    |
+| GET     | /items/_find                       | get all items               |
+| GET     | /items/590687a0f5a5ee65/_findOne      | get one item for ObjectID   |
+| PUT     | /items/590687a0f5a5ee65/_update      | update item for ObjectID    |
 
 ====
-a note on deployment: currently deployed on heroku witht he Sandbox plan as mLab Heroku add-on, this will need to be changed if project moves to production level, but for now should be ok
-
+a note on json returns:
+res: GET /items/_find ===> list of json objects
+```
+[
+  {
+    _id: {{item_id}}},
+    client_id: {{client_id}}},
+    title: "Burger Ode 2",
+    type: "painting",
+    artist: "Bob Belcher",
+    description: "beautiful",
+    status: "in",
+    packing: "box",
+    location: "LI-3",
+    __v: 0,
+    dimension: [
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    _id: "59038cb1b71cc548262bc3bb",
+    client_id: "59038c67b71cc548262bc3ba",
+    title: "Burger Ode",
+    type: "painting",
+    artist: "Bob Belcher",
+    description: "vibrant",
+    status: "in",
+    packing: "box",
+    location: "LI-2",
+    __v: 0,
+    dimension: [
+      10,
+      10,
+      10
+    ]
+  }
+]
+```
+res: GET /items/:item_id/_findOne
+```{
+  _id: "590687a0f5a5ee650d9b1b3d",
+  client_id: "59068692f5a5ee650d9b1b38",
+  title: "Bombs",
+  artist: "Blacksmith",
+  description: "just a bunch of bombs",
+  status: "in",
+  packing: "box",
+  __v: 0,
+  dimension: [
+      5,
+      5,
+      5
+  ]
+}```
 
 
 ## Project Description Overview
