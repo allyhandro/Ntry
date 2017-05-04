@@ -19,7 +19,6 @@ class LocationQRViewController: UIViewController, AVCaptureMetadataOutputObjects
     
     weak var artLabelDelegate: LocationQRViewControllerDelegate?
     @IBOutlet var messageLabel:UILabel!
-    @IBOutlet var topbar: UIView!
     var captureSession: AVCaptureSession?
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var qrCodeFrameView: UIView?

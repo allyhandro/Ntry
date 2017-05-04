@@ -14,6 +14,8 @@ class ScanViewController: UIViewController{
     
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
+    
+    //Be able to update to database
     @IBOutlet weak var artLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     

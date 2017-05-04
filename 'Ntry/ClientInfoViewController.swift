@@ -1,30 +1,21 @@
 //
-//  AddViewController.swift
+//  ClientInfoViewController.swift
 //  'Ntry
 //
-//  Created by Caroline Lai on 4/18/17.
+//  Created by Caroline Lai on 5/4/17.
 //  Copyright © 2017 Caroline Lai. All rights reserved.
 //
 
 import Foundation
 
-class AddViewController: UIViewController{
+
+class ClientInfoTableViewController:UITableViewController{
+
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
-
-    //Information pulled from database based on art selected from art page
     
-    @IBOutlet weak var artLabel: UILabel!
-    
-    @IBOutlet weak var categoryLabel: UILabel!
-    @IBOutlet weak var clientLabel: UILabel!
-    
-    @IBOutlet weak var entryLabel: UILabel!
-    
-    @IBOutlet weak var packingLabel: UILabel!
-    @IBOutlet weak var locLabel: UILabel!
-    
-    
+    //Array of art listed under chosen client
+    var artData = [[String:AnyObject]]
     
     override func viewDidLoad() {
         if self.revealViewController() != nil {
@@ -40,8 +31,7 @@ class AddViewController: UIViewController{
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Dispose of any resources that can be recreat
     }
-    
     
 }

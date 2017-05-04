@@ -19,7 +19,6 @@ class ArtQRViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
     
     weak var artLabelDelegate: ArtQRViewControllerDelegate?
     @IBOutlet var messageLabel:UILabel!
-    @IBOutlet var topbar: UIView!
     var captureSession: AVCaptureSession?
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var qrCodeFrameView: UIView?
@@ -56,8 +55,9 @@ class ArtQRViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
             
             //Setting frame of camera
             let screenWidth = UIScreen.main.bounds.size.width
+            let screenHeight = UIScreen.main.bounds.size.length
                 
-            videoPreviewLayer?.frame = CGRect(x:0, y:55, width:screenWidth, height:200)
+            videoPreviewLayer?.frame = CGRect(x:0, y:0, width:screenWidth, height:screenHeight*3/4)
             view.layer.addSublayer(videoPreviewLayer!)
             
             

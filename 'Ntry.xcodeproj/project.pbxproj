@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		825260331EB29463008292B2 /* ArtQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825260321EB29463008292B2 /* ArtQRViewController.swift */; };
+		82A2F9131EBBAE6000B0D187 /* ClientInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A2F9121EBBAE6000B0D187 /* ClientInfoViewController.swift */; };
 		82EBC1881EA6CC1F008A7725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EBC1871EA6CC1F008A7725 /* AppDelegate.swift */; };
 		82EBC18A1EA6CC1F008A7725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EBC1891EA6CC1F008A7725 /* ViewController.swift */; };
 		82EBC18D1EA6CC1F008A7725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82EBC18B1EA6CC1F008A7725 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		825260321EB29463008292B2 /* ArtQRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtQRViewController.swift; sourceTree = "<group>"; };
+		82A2F9121EBBAE6000B0D187 /* ClientInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientInfoViewController.swift; sourceTree = "<group>"; };
 		82EBC1841EA6CC1F008A7725 /* 'Ntry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "'Ntry.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82EBC1871EA6CC1F008A7725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82EBC1891EA6CC1F008A7725 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,11 +125,12 @@
 				82EBC1C01EA6CFCE008A7725 /* MenuTableViewController.swift */,
 				82EBC1B51EA6CCBC008A7725 /* HomeViewController.swift */,
 				82EBC1B71EA6CCD5008A7725 /* ClientsTableViewController.swift */,
+				82A2F9121EBBAE6000B0D187 /* ClientInfoViewController.swift */,
 				82EBC1B91EA6CD6D008A7725 /* ArtTableViewController.swift */,
+				82EBC1C91EA6E514008A7725 /* AddViewController.swift */,
 				82EBC1C71EA6E502008A7725 /* ScanViewController.swift */,
 				82F5BDEF1EB7166600DA32FC /* LocationQRViewController.swift */,
 				825260321EB29463008292B2 /* ArtQRViewController.swift */,
-				82EBC1C91EA6E514008A7725 /* AddViewController.swift */,
 				82EBC1CB1EA6E51E008A7725 /* SettingsViewController.swift */,
 				82EBC1931EA6CC1F008A7725 /* Info.plist */,
 				82EBC18E1EA6CC1F008A7725 /* Assets.xcassets */,
@@ -313,6 +316,7 @@
 				82EBC1BA1EA6CD6D008A7725 /* ArtTableViewController.swift in Sources */,
 				82EBC1BF1EA6CF21008A7725 /* SWRevealViewController.m in Sources */,
 				82EBC1C81EA6E502008A7725 /* ScanViewController.swift in Sources */,
+				82A2F9131EBBAE6000B0D187 /* ClientInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

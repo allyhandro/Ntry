@@ -14,6 +14,14 @@ class ArtTableViewController: UITableViewController{
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
+    //All art pieces pulled from database
+    
+    //Array containing only names for table viewing
+        // if client id exists, only contain art with matching cliend ID
+        // otherwise, contain all art
+    var clientID:String
+    var artData = [[String:AnyObject]]
+    
     override func viewDidLoad() {
         if self.revealViewController() != nil {
             self.revealViewController().rearViewRevealWidth = 165

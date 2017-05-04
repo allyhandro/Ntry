@@ -12,6 +12,8 @@ import UIKit
 class HomeViewController: UIViewController{
 
     @IBOutlet weak var menuButton: UIBarButtonItem!
+
+    //size of array from database
     @IBOutlet weak var clienNum: UILabel!
     @IBOutlet weak var artNum: UILabel!
     
