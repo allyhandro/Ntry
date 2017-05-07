@@ -71,7 +71,7 @@ class ScanViewController: UIViewController{
         let view2:ArtQRViewController = segue.source as! ArtQRViewController
         
         _ = view2.messageLabel.text
-        artLabel.text = fetchTitle(view2.messageLabel.text)
+        artLabel.text = fetchTitle(ID: view2.messageLabel.text!)
         
         //TO DO OPTIONAL
         //artLabel.text = HTTP GET, replace with title of piece
@@ -83,7 +83,7 @@ class ScanViewController: UIViewController{
         locationLabel.text = view2.messageLabel.text
     }
     
-    func fetchTitle(String: ID) -> String{
+    func fetchTitle(ID: String) -> String{
         let url = NSURL(string: "https://ntry.herokuapp.com/api/items/" + ID + "/_findOne")
         URLSession.shared.dataTask(with: url! as URL){ (data, response, error) in
             if error != nil {
@@ -92,15 +92,21 @@ class ScanViewController: UIViewController{
             }
             do {
                 let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
-                for dictionary in json as! [[String: AnyObject]]{
-                    return (dictionary["name"]!)
+                if let title = json["title"] as? String {
+                    print(title)
                 }
-                //                print(json)
+               // print(json)
+//                for dictionary in json as! [[String: AnyObject]]{
+//                    print(dictionary[""]!)
+//                }
+                //print(json)
+                
             } catch let jsonError {
                 print(jsonError)
             }
             
             }.resume()
+        return ""
     }
 
 
