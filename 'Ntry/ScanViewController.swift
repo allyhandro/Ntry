@@ -42,23 +42,7 @@ class ScanViewController: UIViewController{
         
         //My half-baked attempt at making sure a user does not submit a malformed query
         if(locationLabel.text != "" && locationLabel.text != "No QR code is detected" && artLabel.text != "" && artLabel.text != "No QR code is detected"){
-            //
-//                let url = NSURL(string: "https://ntry.herokuapp.com/api/clients/_find")
-//                URLSession.shared.dataTask(with: url! as URL){ (data, response, error) in
-//                    if error != nil {
-//                        print(error!)
-//                        return
-//                    }
-//                    do {
-//                        let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
-//                        for dictionary in json as! [[String: AnyObject]]{
-//                            print(dictionary["name"]!)
-//                        }
-//                    } catch let jsonError {
-//                        print(jsonError)
-//                    }
-//
-//                    }.resume()
+
             let urlString = "https://ntry.herokuapp.com/api/items/" + artLabel.text! + "/_move"
             let url = NSURL(string: urlString)
             let request = NSMutableURLRequest(url: url! as URL)
@@ -86,7 +70,8 @@ class ScanViewController: UIViewController{
     @IBAction func unwindToMenu(segue: UIStoryboardSegue) {        
         let view2:ArtQRViewController = segue.source as! ArtQRViewController
         
-        artLabel.text = view2.messageLabel.text
+        _ = view2.messageLabel.text
+        artLabel.text = fetchTitle(view2.messageLabel.text)
         
         //TO DO OPTIONAL
         //artLabel.text = HTTP GET, replace with title of piece
@@ -97,5 +82,26 @@ class ScanViewController: UIViewController{
         
         locationLabel.text = view2.messageLabel.text
     }
+    
+    func fetchTitle(String: ID) -> String{
+        let url = NSURL(string: "https://ntry.herokuapp.com/api/items/" + ID + "/_findOne")
+        URLSession.shared.dataTask(with: url! as URL){ (data, response, error) in
+            if error != nil {
+                print(error!)
+                return
+            }
+            do {
+                let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
+                for dictionary in json as! [[String: AnyObject]]{
+                    return (dictionary["name"]!)
+                }
+                //                print(json)
+            } catch let jsonError {
+                print(jsonError)
+            }
+            
+            }.resume()
+    }
+
 
 }
