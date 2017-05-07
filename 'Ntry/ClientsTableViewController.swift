@@ -25,35 +25,51 @@ class ClientsTableViewController: UITableViewController{
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        
+        fetchClients()
     
         // Do any additional setup after loading the view, typically from a nib.
         
         //TO DO
         //Make HTTP GET request to retrieve ALL info on clients
         //Parse JSON into dictionary and populate tableView
-        
-        let url:String = "http://ntry.herokuapp.com/api/clients/_find"
-        let urlRequest = URL(string: url)
-        
-        URLSession.shared.dataTask(with: urlRequest!, completionHandler: {(data,response,error) in
-            if(error != nil){
-                print(error.debugDescription)
-            }else{
-                do{
-                    self.clientData =  try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [[String:AnyObject]]
-                    OperationQueue.main.addOperation{
-                        self.tableView.reloadData()
-                    }
-                }catch let error as NSError{
-                    print(error)
-                }
-            }
-        })
+//        
+//        let url:String = "http://ntry.herokuapp.com/api/clients/_find"
+//        let urlRequest = URL(string: url)
+//        
+//        URLSession.shared.dataTask(with: urlRequest!, completionHandler: {(data,response,error) in
+//            if(error != nil){
+//                print(error.debugDescription)
+//            }else{
+//                do{
+//                    self.clientData =  try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [[String:AnyObject]]
+//                    OperationQueue.main.addOperation{
+//                        self.tableView.reloadData()
+//                    }
+//                }catch let error as NSError{
+//                    print(error)
+//                }
+//            }
+//        })
     }
     
     func fetchClients(){
-    
+        let url = NSURL(string: "https://ntry.herokuapp.com/api/clients/_find")
+        URLSession.shared.dataTask(with: url! as URL){ (data, response, error) in
+            if error != nil {
+                print(error!)
+                return
+            }
+            do {
+                let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
+                for dictionary in json as! [[String: AnyObject]]{
+                    print(dictionary["name"]!)
+                }
+//                print(json)
+            } catch let jsonError {
+                print(jsonError)
+            }
+            
+        }.resume()
     }
     
     override func didReceiveMemoryWarning() {
