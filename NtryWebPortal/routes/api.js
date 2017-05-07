@@ -40,7 +40,7 @@ router.route('/items/:item_id/_findOne')
     .get(function(req, res){
         Item.findById(req.params.item_id, function (err, item) {
             if (err) res.send(err);
-            res.json(item);
+            res.json({"item": item});
         });
     });
 
