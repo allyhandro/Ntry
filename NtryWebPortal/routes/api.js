@@ -2,6 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const Item = require('../models/item');
+const Client = require('../models/client');
 // const mongoose = require('mongoose');
 // require('../db');
 // const Item = mongoose.model('Item');
@@ -15,6 +16,15 @@ router.use(function timeLog(req, res, next) {
 router.get('/', (req, res)=>{
     res.json({message: "Welcome to 'Ntry's REST API!"});
 });
+
+// find all clients
+router.route('/clients/_find')
+    .get(function(req, res) {
+        Client.find(function(err, clients) {
+            if (err) res.send (err);
+            res.json(clients);
+        });
+    });
 
 // find all items
 router.route('/items/_find')

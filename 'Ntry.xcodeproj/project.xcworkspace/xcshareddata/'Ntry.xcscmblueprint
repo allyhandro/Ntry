@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B915BECEA77217F2F8C1F2ACE6846BBDC9D44395",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3" : 9223372036854775807,
+    "B915BECEA77217F2F8C1F2ACE6846BBDC9D44395" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7E9F63FA-DD10-44AF-A20E-DA9B078A688B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3" : "SwiftyJSON\/",
+    "B915BECEA77217F2F8C1F2ACE6846BBDC9D44395" : "Ntry\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "'Ntry",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "'Ntry.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/allyhandro\/Ntry.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B915BECEA77217F2F8C1F2ACE6846BBDC9D44395"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lingoer\/SwiftyJSON.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3"
+    }
+  ]
+}
