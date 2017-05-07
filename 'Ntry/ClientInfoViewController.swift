@@ -15,7 +15,7 @@ class ClientInfoTableViewController:UITableViewController{
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
     //Array of art listed under chosen client
-    var artData = [[String:AnyObject]]
+    //var artData = [[String:AnyObject]]
     
     override func viewDidLoad() {
         if self.revealViewController() != nil {

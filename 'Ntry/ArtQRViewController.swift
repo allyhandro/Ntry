@@ -55,9 +55,9 @@ class ArtQRViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
             
             //Setting frame of camera
             let screenWidth = UIScreen.main.bounds.size.width
-            let screenHeight = UIScreen.main.bounds.size.length
+            let screenHeight = UIScreen.main.bounds.size.height
                 
-            videoPreviewLayer?.frame = CGRect(x:0, y:0, width:screenWidth, height:screenHeight*3/4)
+            videoPreviewLayer?.frame = CGRect(x:0, y:0, width:screenWidth, height:screenHeight*14/16)
             view.layer.addSublayer(videoPreviewLayer!)
             
             
@@ -66,7 +66,6 @@ class ArtQRViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
             
             
             view.bringSubview(toFront: messageLabel)
-            view.bringSubview(toFront: topbar)
             
             
             // Initialize QR Code Frame to highlight the QR code

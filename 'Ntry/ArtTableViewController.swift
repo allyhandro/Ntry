@@ -19,8 +19,8 @@ class ArtTableViewController: UITableViewController{
     //Array containing only names for table viewing
         // if client id exists, only contain art with matching cliend ID
         // otherwise, contain all art
-    var clientID:String
-    var artData = [[String:AnyObject]]
+    var clientID:String = ""
+    var artData = [[String:AnyObject]]()
     
     override func viewDidLoad() {
         if self.revealViewController() != nil {
@@ -28,6 +28,11 @@ class ArtTableViewController: UITableViewController{
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+            //TO DO
+            //Make HTTP GET request to retrieve ALL info on pieces of art
+            //Parse JSON into dictionary and populate tableView
+            
         }
         super.viewDidLoad()
         

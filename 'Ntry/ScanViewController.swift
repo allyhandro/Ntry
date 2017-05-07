@@ -38,10 +38,24 @@ class ScanViewController: UIViewController{
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func submit(_ sender: Any) {
+        
+        //My half-baked attempt at making sure a user does not submit a malformed query
+        if(locationLabel.text != "" && locationLabel.text != "No QR code is detected" && artLabel.text != "" && artLabel.text != "No QR code is detected"){
+           
+            //TO DO
+            
+            //HTTP PUT to update DB
+        }
+    }
+    
     @IBAction func unwindToMenu(segue: UIStoryboardSegue) {        
         let view2:ArtQRViewController = segue.source as! ArtQRViewController
         
         artLabel.text = view2.messageLabel.text
+        
+        //TO DO OPTIONAL
+        //artLabel.text = HTTP GET, replace with title of piece
     }
     
     @IBAction func unwindToMenu2(segue: UIStoryboardSegue) {

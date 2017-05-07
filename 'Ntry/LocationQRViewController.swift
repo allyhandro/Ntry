@@ -55,8 +55,9 @@ class LocationQRViewController: UIViewController, AVCaptureMetadataOutputObjects
             
             //Setting frame of camera
             let screenWidth = UIScreen.main.bounds.size.width
+            let screenHeight = UIScreen.main.bounds.size.height
             
-            videoPreviewLayer?.frame = CGRect(x:0, y:55, width:screenWidth, height:200)
+            videoPreviewLayer?.frame = CGRect(x:0, y:0, width:screenWidth, height:screenHeight*14/16)
             view.layer.addSublayer(videoPreviewLayer!)
             
             
@@ -65,7 +66,6 @@ class LocationQRViewController: UIViewController, AVCaptureMetadataOutputObjects
             
             
             view.bringSubview(toFront: messageLabel)
-            view.bringSubview(toFront: topbar)
             
             
             // Initialize QR Code Frame to highlight the QR code

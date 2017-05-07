@@ -29,6 +29,10 @@ class ClientsTableViewController: UITableViewController{
     
         // Do any additional setup after loading the view, typically from a nib.
         
+        //TO DO
+        //Make HTTP GET request to retrieve ALL info on clients
+        //Parse JSON into dictionary and populate tableView
+        
         let url:String = "http://ntry.herokuapp.com/api/clients/_find"
         let urlRequest = URL(string: url)
         
