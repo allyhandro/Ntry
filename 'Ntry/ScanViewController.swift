@@ -42,6 +42,7 @@ class ScanViewController: UIViewController{
         
         //My half-baked attempt at making sure a user does not submit a malformed query
         if(locationLabel.text != "" && locationLabel.text != "No QR code is detected" && artLabel.text != "" && artLabel.text != "No QR code is detected"){
+            //
 //                let url = NSURL(string: "https://ntry.herokuapp.com/api/clients/_find")
 //                URLSession.shared.dataTask(with: url! as URL){ (data, response, error) in
 //                    if error != nil {
@@ -53,14 +54,13 @@ class ScanViewController: UIViewController{
 //                        for dictionary in json as! [[String: AnyObject]]{
 //                            print(dictionary["name"]!)
 //                        }
-//                        //                print(json)
 //                    } catch let jsonError {
 //                        print(jsonError)
 //                    }
 //
 //                    }.resume()
-            
-            let url = NSURL(string: "https://ntry.herokuapp.com/api/clients/_find")
+            let urlString = "https://ntry.herokuapp.com/api/items/" + artLabel.text! + "/_move"
+            let url = NSURL(string: urlString)
             let request = NSMutableURLRequest(url: url! as URL)
             request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type") //Optional
             request.httpMethod = "PUT"
