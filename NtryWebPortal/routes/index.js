@@ -116,10 +116,11 @@ router.get('/find', ensureAuthenticated, function (req, res){
                         console.log("from client find" + err);
                     } else {
                         userRes.push(client.name);
+                        res.render('find', {layout:'userLayout', res: userRes});
                     }
                 });
             });
-            res.render('find', {layout:'userLayout', res: userRes});
+            //res.render('find', {layout:'userLayout', res: userRes});
         }
     });
 });

@@ -42,11 +42,45 @@ class ScanViewController: UIViewController{
         
         //My half-baked attempt at making sure a user does not submit a malformed query
         if(locationLabel.text != "" && locationLabel.text != "No QR code is detected" && artLabel.text != "" && artLabel.text != "No QR code is detected"){
-           
-            //TO DO
+//                let url = NSURL(string: "https://ntry.herokuapp.com/api/clients/_find")
+//                URLSession.shared.dataTask(with: url! as URL){ (data, response, error) in
+//                    if error != nil {
+//                        print(error!)
+//                        return
+//                    }
+//                    do {
+//                        let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
+//                        for dictionary in json as! [[String: AnyObject]]{
+//                            print(dictionary["name"]!)
+//                        }
+//                        //                print(json)
+//                    } catch let jsonError {
+//                        print(jsonError)
+//                    }
+//
+//                    }.resume()
             
-            //HTTP PUT to update DB
-        }
+            let url = NSURL(string: "https://ntry.herokuapp.com/api/clients/_find")
+            let request = NSMutableURLRequest(url: url! as URL)
+            request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type") //Optional
+            request.httpMethod = "PUT"
+            let session = URLSession(configuration:URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)
+            let locationString = "location=" + locationLabel.text!
+            let data = locationString.data(using: String.Encoding.utf8)
+            request.httpBody = data
+            
+            let dataTask = session.dataTask(with: request as URLRequest) { (data, response, error) -> Void in
+                
+                if error != nil {
+                    print(error!)
+                }
+                else {
+                    let jsonStr = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+                    print("Parsed JSON: '\(jsonStr)'")
+                } 
+            }
+            dataTask.resume()
+            }
     }
     
     @IBAction func unwindToMenu(segue: UIStoryboardSegue) {        
