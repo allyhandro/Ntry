@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -81,7 +81,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="P9G-36-1fC" id="PkE-gw-TBx">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UlJ-cK-KL3">
@@ -101,7 +101,7 @@
                                         <rect key="frame" x="0.0" y="51" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cp1-hz-zhL" id="ZeE-KD-5so">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1op-ly-1bC">
@@ -121,7 +121,7 @@
                                         <rect key="frame" x="0.0" y="96" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W7m-9H-nmh" id="Dgc-W0-Prl">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clients" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSN-e3-Ux1">
@@ -141,7 +141,7 @@
                                         <rect key="frame" x="0.0" y="141" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4bJ-z3-sz6" id="hV5-Gw-lsa">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Art Pieces" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nP8-RG-P4G">
@@ -161,7 +161,7 @@
                                         <rect key="frame" x="0.0" y="186" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5oO-jq-lWs" id="fYe-l5-qEM">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scan QR Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiI-LQ-sdT">
@@ -181,7 +181,7 @@
                                         <rect key="frame" x="0.0" y="231" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="24C-9N-tO5" id="wGh-OH-Fb3">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59K-nP-Vcg">
@@ -201,7 +201,7 @@
                                         <rect key="frame" x="0.0" y="276" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ywX-cP-jBH" id="5ez-O0-BPd">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Logout" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Egh-W3-kbw">
@@ -213,6 +213,26 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="45" id="mGc-Gd-Nxw">
+                                        <rect key="frame" x="0.0" y="321" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mGc-Gd-Nxw" id="6Xe-Ky-ht6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In/Out" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNF-lX-SBw">
+                                                    <rect key="frame" x="22" y="8" width="120" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                                                    <color key="textColor" red="0.94598263500000002" green="0.91928595300000004" blue="0.81474971770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="IwG-9O-bTw" kind="presentation" id="Q4Y-kz-5nz"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -276,7 +296,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fkL-DP-4IE" id="36B-nu-sVB">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -591,6 +611,22 @@
             <point key="canvasLocation" x="2249" y="-298"/>
         </scene>
         <!--Navigation Controller-->
+        <scene sceneID="nyW-fK-GbC">
+            <objects>
+                <navigationController id="IwG-9O-bTw" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pH9-R8-asE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="0uZ-pt-beG" kind="relationship" relationship="rootViewController" id="ZzR-87-3wP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oge-WE-IKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1722" y="-1710"/>
+        </scene>
+        <!--Navigation Controller-->
         <scene sceneID="GsD-q7-0qc">
             <objects>
                 <navigationController id="vCQ-gb-aOJ" sceneMemberID="viewController">
@@ -754,7 +790,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="aVG-Ve-hFD" firstAttribute="top" secondItem="sBD-Bz-6EV" secondAttribute="bottom" id="2qy-do-iA1"/>
+                            <constraint firstItem="aVG-Ve-hFD" firstAttribute="top" secondItem="sBD-Bz-6EV" secondAttribute="bottom" id="DzD-BU-CkZ"/>
                             <constraint firstAttribute="trailing" secondItem="sBD-Bz-6EV" secondAttribute="trailing" id="EFb-4T-sXY"/>
                             <constraint firstItem="sBD-Bz-6EV" firstAttribute="leading" secondItem="B5f-xE-j3A" secondAttribute="leading" id="M3j-a5-8PY"/>
                         </constraints>
@@ -767,7 +803,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KmN-iX-9W6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="NQg-qw-IDz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4660" y="1021"/>
+            <point key="canvasLocation" x="4660" y="966"/>
         </scene>
         <!--LocationQR View Controller-->
         <scene sceneID="p79-Y2-eFO">
@@ -889,7 +925,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dEj-n5-ybF" id="BYF-DI-ibE">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -942,9 +978,347 @@
             </objects>
             <point key="canvasLocation" x="3873" y="-272"/>
         </scene>
+        <!--In/Out Scene-->
+        <scene sceneID="Awn-3e-cQY">
+            <objects>
+                <viewController id="0uZ-pt-beG" userLabel="In/Out Scene" customClass="InOutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bb9-qa-ANT"/>
+                        <viewControllerLayoutGuide type="bottom" id="bYX-zU-yLA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FI3-bQ-Ste">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYi-ge-O7g">
+                                <rect key="frame" x="112" y="120" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.1039212868" green="0.1327252984" blue="0.29472839830000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="focus"/>
+                                <connections>
+                                    <segue destination="bET-wS-Ved" kind="presentation" id="A2K-4l-Baf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vi-Kj-MTR" userLabel="LocationLabel">
+                                <rect key="frame" x="16" y="531" width="343" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Art Piece" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwR-ox-xo7">
+                                <rect key="frame" x="108" y="82" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juT-x7-b2K" userLabel="ArtLabel">
+                                <rect key="frame" x="16" y="278" width="343" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEH-vk-4tU">
+                                <rect key="frame" x="133" y="583" width="98" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="0uZ-pt-beG" eventType="touchUpInside" id="fGf-vU-tah"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fSx-oL-Vpy">
+                                <rect key="frame" x="163" y="394" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94598263500000002" green="0.91928595300000004" blue="0.81474971770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="In/Out" id="ygg-0s-RQy">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="oAS-am-tmh"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="artLabel" destination="juT-x7-b2K" id="5Zd-3T-ygL"/>
+                        <outlet property="locationLabel" destination="6vi-Kj-MTR" id="qgW-fj-aM6"/>
+                        <outlet property="menuButton" destination="oAS-am-tmh" id="4EO-1W-hDR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZA-yJ-PEL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2433" y="-1710"/>
+        </scene>
+        <!--ArtQR2 View Controller-->
+        <scene sceneID="4Jv-HK-TuB">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fqR-o3-Jex" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gCF-RA-ypU" userLabel="Exit" sceneMemberID="exit"/>
+                <viewController title="ArtQR2ViewController" id="bET-wS-Ved" userLabel="ArtQR2 View Controller" customClass="ArtQRViewController" customModule="_Ntry" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fFS-sf-ivI"/>
+                        <viewControllerLayoutGuide type="bottom" id="Der-v3-VA8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FgG-Du-loi" customClass="ArtQR2ViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ds-S9-bZo">
+                                <rect key="frame" x="-94" y="-29893" width="375" height="667"/>
+                                <subviews>
+                                    <view alpha="0.80000001192092896" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g9h-um-Am3">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Scan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0j-KU-lyv">
+                                                <rect key="frame" x="165" y="23" width="45" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPF-cc-fMe">
+                                                <rect key="frame" x="15" y="24" width="18" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="18" id="HQN-uh-T6Z"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" image="F0D0F01F-F6C7-4741-8C70-58C3EC97298E"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="iPF-cc-fMe" secondAttribute="bottom" constant="13" id="4ec-uz-pd4"/>
+                                            <constraint firstAttribute="bottom" secondItem="s0j-KU-lyv" secondAttribute="bottom" constant="8" id="7cb-XK-ge5"/>
+                                            <constraint firstItem="iPF-cc-fMe" firstAttribute="top" secondItem="g9h-um-Am3" secondAttribute="top" constant="24" id="GOl-uf-qX7"/>
+                                            <constraint firstItem="s0j-KU-lyv" firstAttribute="centerX" secondItem="g9h-um-Am3" secondAttribute="centerX" id="fYe-HP-XCu"/>
+                                            <constraint firstItem="iPF-cc-fMe" firstAttribute="leading" secondItem="g9h-um-Am3" secondAttribute="leading" constant="15" id="fuO-2g-UIg"/>
+                                            <constraint firstAttribute="height" constant="55" id="x2Y-8P-ARC"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="No QR code is detected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fi-93-Z4d">
+                                        <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="uZd-ec-sJJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="g9h-um-Am3" secondAttribute="trailing" id="M3f-Up-1Jb"/>
+                                    <constraint firstItem="3Fi-93-Z4d" firstAttribute="leading" secondItem="8ds-S9-bZo" secondAttribute="leading" id="T89-WN-MVb"/>
+                                    <constraint firstItem="g9h-um-Am3" firstAttribute="top" secondItem="8ds-S9-bZo" secondAttribute="top" id="jxK-Ee-G4x"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Fi-93-Z4d" secondAttribute="trailing" id="kX5-eg-Tsu"/>
+                                    <constraint firstItem="g9h-um-Am3" firstAttribute="leading" secondItem="8ds-S9-bZo" secondAttribute="leading" id="ySq-vv-JvJ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No QR code is detected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oX8-se-jPo">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="G1p-o6-dIx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRd-fM-anG">
+                                <rect key="frame" x="16" y="20" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="F0D0F01F-F6C7-4741-8C70-58C3EC97298E"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4s-Rc-cpt">
+                                <rect key="frame" x="125" y="586" width="124" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="27"/>
+                                <state key="normal" title="Select">
+                                    <color key="titleColor" red="0.1039212868" green="0.1327252984" blue="0.29472839830000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectButton:" destination="bET-wS-Ved" eventType="touchUpInside" id="c0n-mg-YyO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="oX8-se-jPo" secondAttribute="trailing" id="ED3-E9-JLR"/>
+                            <constraint firstItem="Der-v3-VA8" firstAttribute="top" secondItem="oX8-se-jPo" secondAttribute="bottom" id="Els-09-hOy"/>
+                            <constraint firstItem="oX8-se-jPo" firstAttribute="leading" secondItem="FgG-Du-loi" secondAttribute="leading" id="HGE-Zn-NMy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="oX8-se-jPo" id="5tD-Mk-nwC"/>
+                        <segue destination="gCF-RA-ypU" kind="unwind" identifier="unwindToMenu" unwindAction="unwindToMenuWithSegue:" id="Qdg-m9-ldT"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3398" y="-1710"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ComingSoon" width="1024" height="1024"/>
+        <image name="F0D0F01F-F6C7-4741-8C70-58C3EC97298E" width="40" height="40">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
+GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
+c1dOU0NvbG9ygAKADRIgwAAAgAOAC1h7NDAsIDQwfdIVChYYWk5TLm9iamVjdHOhF4AEgArSFQoaHaIb
+HIAFgAaACRAA0iAKISJfEBROU1RJRkZSZXByZXNlbnRhdGlvboAHgAhPESGeTU0AKgAAGQgAAAACAAAA
+cQAAAOwAAAC3AAAAHwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAB8AAAC3AAAA7AAAAHEAAAACAAAAcQAAAPwAAAD/AAAA/wAAANIAAAAoAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAADSAAAA
+/wAAAP8AAAD8AAAAcQAAAO0AAAD/AAAA/wAAAP8AAAD/AAAA1AAAACgAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAADUAAAA/wAAAP8AAAD/AAAA/wAAAO0AAAC5AAAA
+/wAAAP8AAAD/AAAA/wAAAP8AAADUAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAACgAAADUAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAC5AAAAIQAAANIAAAD/AAAA/wAAAP8AAAD/AAAA
+/wAAANQAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAADUAAAA/wAAAP8AAAD/AAAA
+/wAAAP8AAADSAAAAIQAAAAAAAAApAAAA1AAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA1AAAACgAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAACgAAADUAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADUAAAAKQAAAAAAAAAAAAAA
+AAAAACkAAADUAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADUAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAADUAAAA
+/wAAAP8AAAD/AAAA/wAAAP8AAADUAAAAKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAANQAAAD/AAAA
+/wAAAP8AAAD/AAAA/wAAANUAAAApAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACkAAADVAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADUAAAA
+KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAA1AAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA
+1QAAACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAACgAAADVAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADUAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAACgAAADUAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADVAAAAKAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAADVAAAA/wAAAP8AAAD/AAAA
+/wAAAP8AAADUAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+KAAAANUAAAD/AAAA/wAAAP8AAAD/AAAA/wAAANUAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAACgAAADVAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADVAAAAKAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAA1QAAAP8AAAD/AAAA
+/wAAAP8AAAD/AAAA1gAAACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAADWAAAA
+/wAAAP8AAAD/AAAA/wAAAP8AAADVAAAAKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAADVAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADWAAAA
+KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAADWAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADVAAAA
+KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAKAAAANUAAAD/AAAA/wAAAP8AAAD/AAAA/wAAANYAAAAoAAAAAAAAAAAAAAAAAAAA
+AAAAACgAAADWAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADWAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAA
+1gAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA1gAAACgAAAAAAAAAAAAAACgAAADWAAAA/wAAAP8AAAD/AAAA
+/wAAAP8AAADWAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAADWAAAA/wAAAP8AAAD/AAAA
+/wAAAP8AAADWAAAAJAAAACQAAADWAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADWAAAAKAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAANYAAAD/AAAA/wAAAP8AAAD/AAAA/wAAANcAAADXAAAA
+/wAAAP8AAAD/AAAA/wAAAP8AAADWAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAoAAAA1gAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAADWAAAA
+KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAADWAAAA
+/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAADWAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIwAAANcAAAD/AAAA/wAAAP8AAAD/AAAA
+/wAAAP8AAADXAAAAIwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAACMAAADXAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA1wAAACMAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAADXAAAA
+/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAADXAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAADWAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA
+/wAAAP8AAAD/AAAA/wAAANYAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAACgAAADWAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADXAAAA1wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA
+1gAAACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAADWAAAA/wAAAP8AAAD/AAAA
+/wAAAP8AAADXAAAAJQAAACUAAADXAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADWAAAAKAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAACgAAADWAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADXAAAAKAAAAAAAAAAAAAAA
+KAAAANcAAAD/AAAA/wAAAP8AAAD/AAAA/wAAANYAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAADWAAAA
+/wAAAP8AAAD/AAAA/wAAAP8AAADWAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAA1gAAAP8AAAD/AAAA
+/wAAAP8AAAD/AAAA1gAAACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAADVAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADWAAAA
+KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAADWAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADVAAAA
+KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAACkAAADVAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADWAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAKAAAANYAAAD/AAAA/wAAAP8AAAD/AAAA/wAAANUAAAApAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAADVAAAA/wAAAP8AAAD/AAAA
+/wAAAP8AAADVAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAA
+1QAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA1QAAACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAACkAAADUAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADVAAAAKAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAADVAAAA/wAAAP8AAAD/AAAA
+/wAAAP8AAADUAAAAKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACkAAADVAAAA
+/wAAAP8AAAD/AAAA/wAAAP8AAADVAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAANUAAAD/AAAA/wAAAP8AAAD/AAAA/wAAANUAAAApAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACkAAADVAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADVAAAA
+KQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAApAAAA1QAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA1QAAACkAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAACkAAADUAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADUAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAADUAAAA
+/wAAAP8AAAD/AAAA/wAAAP8AAADUAAAAKQAAAAAAAAAAAAAAAAAAACkAAADUAAAA/wAAAP8AAAD/AAAA
+/wAAAP8AAADUAAAAKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKQAAANQAAAD/AAAA/wAAAP8AAAD/AAAA
+/wAAANQAAAApAAAAAAAAACEAAADSAAAA/wAAAP8AAAD/AAAA/wAAAP8AAADUAAAAKAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAA1AAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA0gAAACEAAAC5AAAA
+/wAAAP8AAAD/AAAA/wAAAP8AAADUAAAAKQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAACkAAADUAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAC5AAAA7QAAAP8AAAD/AAAA/wAAAP8AAADUAAAA
+KQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKQAAANQAAAD/AAAA
+/wAAAP8AAAD/AAAA7QAAAHEAAAD8AAAA/wAAAP8AAADSAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAA0gAAAP8AAAD/AAAA/AAAAHEAAAACAAAA
+cQAAAOwAAAC4AAAAHwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAB8AAAC4AAAA7AAAAHEAAAACAA4BAAADAAAAAQAoAAABAQADAAAAAQAoAAAB
+AgADAAAABAAAGbYBAwADAAAAAQABAAABBgADAAAAAQACAAABEQAEAAAAAQAAAAgBEgADAAAAAQABAAAB
+FQADAAAAAQAEAAABFgADAAAAAQAoAAABFwAEAAAAAQAAGQABHAADAAAAAQABAAABUgADAAAAAQABAAAB
+UwADAAAABAAAGb6HcwAHAAAH2AAAGcYAAAAAAAgACAAIAAgAAQABAAEAAQAAB9hhcHBsAiAAAG1udHJS
+R0IgWFlaIAfZAAIAGQALABoAC2Fjc3BBUFBMAAAAAGFwcGwAAAAAAAAAAAAAAAAAAAAAAAD21gABAAAA
+ANMtYXBwbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC2Rlc2MA
+AAEIAAAAb2RzY20AAAF4AAAFnGNwcnQAAAcUAAAAOHd0cHQAAAdMAAAAFHJYWVoAAAdgAAAAFGdYWVoA
+AAd0AAAAFGJYWVoAAAeIAAAAFHJUUkMAAAecAAAADmNoYWQAAAesAAAALGJUUkMAAAecAAAADmdUUkMA
+AAecAAAADmRlc2MAAAAAAAAAFEdlbmVyaWMgUkdCIFByb2ZpbGUAAAAAAAAAAAAAABRHZW5lcmljIFJH
+QiBQcm9maWxlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABt
+bHVjAAAAAAAAAB8AAAAMc2tTSwAAACgAAAGEZGFESwAAAC4AAAGsY2FFUwAAACQAAAHadmlWTgAAACQA
+AAH+cHRCUgAAACYAAAIidWtVQQAAACoAAAJIZnJGVQAAACgAAAJyaHVIVQAAACgAAAKaemhUVwAAABYA
+AALCbmJOTwAAACYAAALYY3NDWgAAACIAAAL+aGVJTAAAAB4AAAMgaXRJVAAAACgAAAM+cm9STwAAACQA
+AANmZGVERQAAACwAAAOKa29LUgAAABYAAAO2c3ZTRQAAACYAAALYemhDTgAAABYAAAPMamFKUAAAABoA
+AAPiZWxHUgAAACIAAAP8cHRQTwAAACYAAAQebmxOTAAAACgAAAREZXNFUwAAACYAAAQedGhUSAAAACQA
+AARsdHJUUgAAACIAAASQZmlGSQAAACgAAASyaHJIUgAAACgAAATacGxQTAAAACwAAAUCcnVSVQAAACIA
+AAUuYXJFRwAAACYAAAVQZW5VUwAAACYAAAV2AFYBYQBlAG8AYgBlAGMAbgD9ACAAUgBHAEIAIABwAHIA
+bwBmAGkAbABHAGUAbgBlAHIAZQBsACAAUgBHAEIALQBiAGUAcwBrAHIAaQB2AGUAbABzAGUAUABlAHIA
+ZgBpAGwAIABSAEcAQgAgAGcAZQBuAOgAcgBpAGMAQx6lAHUAIABoAOwAbgBoACAAUgBHAEIAIABDAGgA
+dQBuAGcAUABlAHIAZgBpAGwAIABSAEcAQgAgAEcAZQBuAOkAcgBpAGMAbwQXBDAEMwQwBDsETAQ9BDgE
+OQAgBD8EQAQ+BEQEMAQ5BDsAIABSAEcAQgBQAHIAbwBmAGkAbAAgAGcA6QBuAOkAcgBpAHEAdQBlACAA
+UgBWAEIAwQBsAHQAYQBsAOEAbgBvAHMAIABSAEcAQgAgAHAAcgBvAGYAaQBskBp1KAAgAFIARwBCACCC
+cl9pY8+P8ABHAGUAbgBlAHIAaQBzAGsAIABSAEcAQgAtAHAAcgBvAGYAaQBsAE8AYgBlAGMAbgD9ACAA
+UgBHAEIAIABwAHIAbwBmAGkAbAXkBegF1QXkBdkF3AAgAFIARwBCACAF2wXcBdwF2QBQAHIAbwBmAGkA
+bABvACAAUgBHAEIAIABnAGUAbgBlAHIAaQBjAG8AUAByAG8AZgBpAGwAIABSAEcAQgAgAGcAZQBuAGUA
+cgBpAGMAQQBsAGwAZwBlAG0AZQBpAG4AZQBzACAAUgBHAEIALQBQAHIAbwBmAGkAbMd8vBgAIABSAEcA
+QgAg1QS4XNMMx3xmbpAaACAAUgBHAEIAIGPPj/Blh072TgCCLAAgAFIARwBCACAw1zDtMNUwoTCkMOsD
+kwO1A70DuQO6A8wAIAPAA8EDvwPGA68DuwAgAFIARwBCAFAAZQByAGYAaQBsACAAUgBHAEIAIABnAGUA
+bgDpAHIAaQBjAG8AQQBsAGcAZQBtAGUAZQBuACAAUgBHAEIALQBwAHIAbwBmAGkAZQBsDkIOGw4jDkQO
+Hw4lDkwAIABSAEcAQgAgDhcOMQ5IDicORA4bAEcAZQBuAGUAbAAgAFIARwBCACAAUAByAG8AZgBpAGwA
+aQBZAGwAZQBpAG4AZQBuACAAUgBHAEIALQBwAHIAbwBmAGkAaQBsAGkARwBlAG4AZQByAGkBDQBrAGkA
+IABSAEcAQgAgAHAAcgBvAGYAaQBsAFUAbgBpAHcAZQByAHMAYQBsAG4AeQAgAHAAcgBvAGYAaQBsACAA
+UgBHAEIEHgQxBEkEOAQ5ACAEPwRABD4ERAQ4BDsETAAgAFIARwBCBkUGRAZBACAGKgY5BjEGSgZBACAA
+UgBHAEIAIAYnBkQGOQYnBkUARwBlAG4AZQByAGkAYwAgAFIARwBCACAAUAByAG8AZgBpAGwAZXRleHQA
+AAAAQ29weXJpZ2h0IDIwMDcgQXBwbGUgSW5jLiwgYWxsIHJpZ2h0cyByZXNlcnZlZC4AWFlaIAAAAAAA
+APNSAAEAAAABFs9YWVogAAAAAAAAdE0AAD3uAAAD0FhZWiAAAAAAAABadQAArHMAABc0WFlaIAAAAAAA
+ACgaAAAVnwAAuDZjdXJ2AAAAAAAAAAEBzQAAc2YzMgAAAAAAAQxCAAAF3v//8yYAAAeSAAD9kf//+6L/
+//2jAAAD3AAAwGzSJSYnKFokY2xhc3NuYW1lWCRjbGFzc2VzXxAQTlNCaXRtYXBJbWFnZVJlcKMnKSpa
+TlNJbWFnZVJlcFhOU09iamVjdNIlJiwtV05TQXJyYXmiLCrSJSYvMF5OU011dGFibGVBcnJheaMvLCrT
+MjMKNDU2V05TV2hpdGVcTlNDb2xvclNwYWNlRDAgMAAQA4AM0iUmODlXTlNDb2xvcqI4KtIlJjs8V05T
+SW1hZ2WiOypfEA9OU0tleWVkQXJjaGl2ZXLRP0BUcm9vdIABAAgAEQAaACMALQAyADcARgBMAFcAXgBl
+AHIAeQCBAIMAhQCKAIwAjgCXAJwApwCpAKsArQCyALUAtwC5ALsAvQDCANkA2wDdIn8ihCKPIpgiqyKv
+IroiwyLIItAi0yLYIuci6yLyIvojByMMIw4jECMVIx0jICMlIy0jMCNCI0UjSgAAAAAAAAIBAAAAAAAA
+AEEAAAAAAAAAAAAAAAAAACNMA
+</mutableData>
+        </image>
         <image name="Login Logo" width="1024" height="1024"/>
         <image name="cross" width="40" height="40"/>
         <image name="focus" width="150" height="150"/>

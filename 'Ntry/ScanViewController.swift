@@ -57,10 +57,28 @@ class ScanViewController: UIViewController{
                 
                 if error != nil {
                     print(error!)
+                    
+                    // create the alert
+                    let alert = UIAlertController(title: "Uh-oh!", message: "Something went wrong", preferredStyle: UIAlertControllerStyle.alert)
+                    
+                    // add an action (button)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                    
+                    // show the alert
+                    self.present(alert, animated: true, completion: nil)
                 }
                 else {
                     let jsonStr = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
                     print("Parsed JSON: '\(jsonStr)'")
+                    
+                    // create the alert
+                    let alert = UIAlertController(title: "Success", message: "Update successful", preferredStyle: UIAlertControllerStyle.alert)
+                    
+                    // add an action (button)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                    
+                    // show the alert
+                    self.present(alert, animated: true, completion: nil)
                 } 
             }
             dataTask.resume()
@@ -70,11 +88,8 @@ class ScanViewController: UIViewController{
     @IBAction func unwindToMenu(segue: UIStoryboardSegue) {        
         let view2:ArtQRViewController = segue.source as! ArtQRViewController
         
-        _ = view2.messageLabel.text
-        artLabel.text = fetchTitle(ID: view2.messageLabel.text!)
+        artLabel.text = view2.messageLabel.text
         
-        //TO DO OPTIONAL
-        //artLabel.text = HTTP GET, replace with title of piece
     }
     
     @IBAction func unwindToMenu2(segue: UIStoryboardSegue) {
@@ -82,32 +97,4 @@ class ScanViewController: UIViewController{
         
         locationLabel.text = view2.messageLabel.text
     }
-    
-    func fetchTitle(ID: String) -> String{
-        let url = NSURL(string: "https://ntry.herokuapp.com/api/items/" + ID + "/_findOne")
-        URLSession.shared.dataTask(with: url! as URL){ (data, response, error) in
-            if error != nil {
-                print(error!)
-                return
-            }
-            do {
-                let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
-                if let title = json["title"] as? String {
-                    print(title)
-                }
-               // print(json)
-//                for dictionary in json as! [[String: AnyObject]]{
-//                    print(dictionary[""]!)
-//                }
-                //print(json)
-                
-            } catch let jsonError {
-                print(jsonError)
-            }
-            
-            }.resume()
-        return ""
-    }
-
-
 }
