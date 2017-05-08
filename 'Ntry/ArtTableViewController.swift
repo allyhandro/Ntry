@@ -23,6 +23,8 @@ class ArtTableViewController: UITableViewController{
     var artData = [[String:AnyObject]]()
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+
         if self.revealViewController() != nil {
             self.revealViewController().rearViewRevealWidth = 165
             menuButton.target = self.revealViewController()
@@ -34,7 +36,7 @@ class ArtTableViewController: UITableViewController{
             //Parse JSON into dictionary and populate tableView
             
         }
-        super.viewDidLoad()
+        
         
         // Do any additional setup after loading the view, typically from a nib.
     }

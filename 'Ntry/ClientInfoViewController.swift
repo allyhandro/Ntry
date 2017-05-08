@@ -18,13 +18,14 @@ class ClientInfoTableViewController:UITableViewController{
     //var artData = [[String:AnyObject]]
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+
         if self.revealViewController() != nil {
             self.revealViewController().rearViewRevealWidth = 165
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
     }

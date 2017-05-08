@@ -19,13 +19,14 @@ class HomeViewController: UIViewController{
     
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         if self.revealViewController() != nil {
             self.revealViewController().rearViewRevealWidth = 165
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        super.viewDidLoad()
+        
         
         // Do any additional setup after loading the view.
     }

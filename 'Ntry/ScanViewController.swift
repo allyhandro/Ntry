@@ -21,14 +21,14 @@ class ScanViewController: UIViewController{
     
     
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
         if self.revealViewController() != nil {
             self.revealViewController().rearViewRevealWidth = 165
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        super.viewDidLoad()
+        
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -45,6 +45,7 @@ class ScanViewController: UIViewController{
 
             let urlString = "https://ntry.herokuapp.com/api/items/" + artLabel.text! + "/_move"
             let url = NSURL(string: urlString)
+            //request is to be used when pushing the new info
             let request = NSMutableURLRequest(url: url! as URL)
             request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type") //Optional
             request.httpMethod = "PUT"
@@ -82,7 +83,7 @@ class ScanViewController: UIViewController{
                 } 
             }
             dataTask.resume()
-            }
+        }
     }
     
     @IBAction func unwindToMenu(segue: UIStoryboardSegue) {        
