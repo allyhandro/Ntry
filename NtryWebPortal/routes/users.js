@@ -98,6 +98,7 @@ router.post('/login', passport.authenticate('local', {failureRedirect:'/users/lo
                 res.render('login', {'errors': err});
             } else {
                 res.cookie('userId', user._id);
+                res.cookie('username', user.username);
                 res.redirect('/user-portal/' + user.slug);
             }
         });

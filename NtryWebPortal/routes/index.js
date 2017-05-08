@@ -106,7 +106,7 @@ router.get('/register', ensureAuthenticated, function (req, res){
 
 router.get('/find', ensureAuthenticated, function (req, res){
     const userRes = [];
-    User.findOne({'_id': req.cookies.userId}, (err, user, count) =>{
+    User.findOne({'username': req.cookies.username}, (err, user, count) =>{
         if(err){
             console.log("from user find" + err);
         } else {
@@ -115,6 +115,7 @@ router.get('/find', ensureAuthenticated, function (req, res){
                     if (err){
                         console.log("from client find" + err);
                     } else {
+                        // console.log(client);
                         userRes.push(client.name);
                     }
                 });

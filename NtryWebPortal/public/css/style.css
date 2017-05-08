@@ -44,7 +44,8 @@ body {
 footer {
   background-color: #e8dcac;
   color: #d3a053;
-  padding: 1em 1em 1em 1em; }
+  padding: 1em 1em 1em 1em;
+  max-height: 10vh; }
   footer a {
     color: #6c4e21; }
 
@@ -466,6 +467,7 @@ footer {
 #find-window {
   background-color: #d3a053;
   position: relative;
+  height: 100vh;
   top: 1em;
   width: 100vw;
   padding: 1em 2em 2em 0; }

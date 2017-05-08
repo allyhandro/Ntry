@@ -74,6 +74,7 @@ footer{
     background-color: $lightYellow;
     color: $medOrange;
     padding: 1em 1em 1em 1em;
+    max-height: 10vh;
     a {
         color: $darkOrange;
     }
@@ -605,6 +606,7 @@ footer{
 #find-window {
     background-color: $medOrange;
     position: relative;
+    height: 100vh;
     top: 1em;
     width: 100vw;
     padding: 1em 2em 2em 0;
