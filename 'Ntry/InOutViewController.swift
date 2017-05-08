@@ -63,10 +63,20 @@ class InOutViewController: UIViewController{
                     self.present(alert, animated: true, completion: nil)
                 }
                 else {
-                    let httpResponse = response as? HTTPURLResponse
-                    let stringResponse = httpResponse?.mimeType?.lowercased()
-                    print(stringResponse!)
-                    self.statusLabel.text = stringResponse
+                    let jsonStr = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+                    //var myJSON : NSDictionary = try JSONSerialization.jsonObject(with: data!,options: []) as! NSDictionary
+
+                    print("Parsed JSON: '\(jsonStr)'")
+//                   var message: NSString = myJSON["message"] as! NSString
+                    let alert = UIAlertController(title: "Success!", message: jsonStr as String?, preferredStyle: UIAlertControllerStyle.alert)
+                    
+                    // add an action (button)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                    
+                    // show the alert
+                    self.present(alert, animated: true, completion: nil)
+                    
+                    //self.statusLabel.text = stringResponse
                 }
             }
             dataTask.resume()

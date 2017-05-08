@@ -3,9 +3,6 @@ const express = require('express');
 const router = express.Router();
 const Item = require('../models/item');
 const Client = require('../models/client');
-// const mongoose = require('mongoose');
-// require('../db');
-// const Item = mongoose.model('Item');
 
 // Middleware to log all api requests
 router.use(function timeLog(req, res, next) {
