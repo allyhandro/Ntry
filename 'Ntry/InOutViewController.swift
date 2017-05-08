@@ -38,7 +38,7 @@ class InOutViewController: UIViewController{
         //My half-baked attempt at making sure a user does not submit a malformed query
         if(artLabel.text != "" && artLabel.text != "No QR code is detected"){
     
-            //I. GET the status using artLabel.text
+            //Prepare the url and request
             let urlString = "https://ntry.herokuapp.com/api/items/" + artLabel.text! + "/_check_in_out"
             let url = NSURL(string: urlString)
             let request = NSMutableURLRequest(url: url! as URL)
@@ -47,7 +47,7 @@ class InOutViewController: UIViewController{
         
             let session = URLSession(configuration:URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)
             
-            //make the request to change the status
+            //Make the request to change the status
             let dataTask = session.dataTask(with: request as URLRequest) { (data, response, error) -> Void in
                 
                 if error != nil {
@@ -65,7 +65,7 @@ class InOutViewController: UIViewController{
                 else {
                     let httpResponse = response as? HTTPURLResponse
                     let stringResponse = httpResponse?.mimeType?.lowercased()
-                    print(stringResponse)
+                    print(stringResponse!)
                     self.statusLabel.text = stringResponse
                 }
             }
