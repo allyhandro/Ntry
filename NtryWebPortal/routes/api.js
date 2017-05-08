@@ -58,6 +58,26 @@ router.route('/items/:item_id/_move')
         })
     });
 
+// find item and toggle the current status
+router.route('/items/:item_id/_check_in_out')
+    .put(function (req, res) {
+        Item.findById(req.params.item_id, function (err, item) {
+            if (err) res.send(err);
+            var message = '';
+            if (item.status === 'in'){
+                item.status = 'out';
+                message = item.title + ' checked out.';
+            } else if (item.status === 'out'){
+                item.status = 'in';
+                message = item.title + ' checked in.';
+            }
+            item.save(function(err){
+                if(err) res.send(err);
+                res.json({message: message});
+            });
+        })
+    });
+
 
 module.exports = router;
 
