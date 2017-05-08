@@ -115,7 +115,7 @@ class InOutViewController: UIViewController{
                                 // show the alert
                                 self.present(alerter, animated: true, completion: nil)
                             }
-                            else {
+                            else {//pushing the change
                                 let jsonStr = NSString(data: changeData!, encoding: String.Encoding.utf8.rawValue)
                                 print("Parsed JSON: '\(jsonStr)'")
                                 
@@ -144,7 +144,7 @@ class InOutViewController: UIViewController{
                         
                         
                         
-                    }catch{
+                    }catch{ //error if could not complete "request"
                         let alertt = UIAlertController(title: "Uh-oh!", message: "Something went wrong", preferredStyle: UIAlertControllerStyle.alert)
                         
                         // add an action (button)
