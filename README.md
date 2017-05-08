@@ -11,14 +11,17 @@ Accesses to the database from the iOS application are done through HTTP requests
 `https://ntry.herokuapp.com/api`
 
 will follow this general naming scheme:
+
+`https://ntry.herokuapp.com/api/collection/itemID/function`
+
 ** disclaimer: these routes will change as functionality increases for security reasons, this is the current naming scheme as of 5/1/17
 
 | HTTP Method   | Route           | Description  |
 | ------- |:----------------------------:| ---------------------------:|
-| GET     | /items                       | get all items               |
-| GET     | /items/590687a0f5a5ee65      | get one item for ObjectID   |
-| PUT     | /items/590687a0f5a5ee65      | update item for ObjectID    |
-
+| GET     | /items/_find                       | get all items               |
+| GET     | /items/590687a0f5a5ee65/_findOne      | get one item for ObjectID   |
+| PUT     | /items/590687a0f5a5ee65/_update      | update item for ObjectID    |
+| PUT     | /items/590687a0f5a5ee65/_check_in_out      | update status of an item, toggles from 'in' to 'out'  |
 
 
 
