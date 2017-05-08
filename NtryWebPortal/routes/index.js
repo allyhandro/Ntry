@@ -106,23 +106,46 @@ router.get('/register', ensureAuthenticated, function (req, res){
 
 router.get('/find', ensureAuthenticated, function (req, res){
     const userRes = [];
-    User.findOne({'username': req.cookies.username}, (err, user, count) =>{
-        if(err){
-            console.log("from user find" + err);
-        } else {
-            user.clients.forEach((clientId) => {
-                Client.findOne({'_id': clientId}, (err, client) =>{
-                    if (err){
-                        console.log("from client find" + err);
-                    } else {
-                        // console.log(client);
-                        userRes.push(client.name);
-                    }
-                });
-            });
-            res.render('find', {layout:'userLayout', res: userRes});
-        }
+    const findUser = new Promise(function (fulfill, reject) {
+        User.findOne({'username': req.cookies.username}, (err, user, count) =>{
+            if (err){
+                reject(req.status);
+            } else {
+                fulfill(user);
+            }
+        })
     });
+    const getRes = findUser.then(function (user) {
+        user.clients.forEach((clientId) => {
+            Client.findOne({'_id': clientId}, (err, client) =>{
+                if (err){
+                    console.log("from client find" + err);
+                } else {
+                    userRes.push(client.name);
+                }
+            });
+         });
+    });
+    getRes.then(function (){
+        res.render('find', {layout:'userLayout', res: userRes});
+    });
+    // User.findOne({'username': req.cookies.username}, (err, user, count) =>{
+    //     if(err){
+    //         console.log("from user find" + err);
+    //     } else {
+    //         user.clients.forEach((clientId) => {
+    //             Client.findOne({'_id': clientId}, (err, client) =>{
+    //                 if (err){
+    //                     console.log("from client find" + err);
+    //                 } else {
+    //                     // console.log(client);
+    //                     userRes.push(client.name);
+    //                 }
+    //             });
+    //         });
+    //         res.render('find', {layout:'userLayout', res: userRes});
+    //     }
+    // });
 });
 
 router.post('/:client/items',ensureAuthenticated, function(req, res){
