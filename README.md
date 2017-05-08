@@ -20,8 +20,9 @@ will follow this general naming scheme:
 | ------- |:----------------------------:| ---------------------------:|
 | GET     | /items/_find                       | get all items               |
 | GET     | /items/590687a0f5a5ee65/_findOne      | get one item for ObjectID   |
-| PUT     | /items/590687a0f5a5ee65/_update      | update item for ObjectID    |
+| PUT     | /items/590687a0f5a5ee65/_move      | update item for ObjectID    |
 | PUT     | /items/590687a0f5a5ee65/_check_in_out      | update status of an item, toggles from 'in' to 'out'  |
+
 
 
 
