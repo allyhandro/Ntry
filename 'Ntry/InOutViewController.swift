@@ -64,11 +64,14 @@ class InOutViewController: UIViewController{
                 }
                 else {
                     let jsonStr = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
-                    //var myJSON : NSDictionary = try JSONSerialization.jsonObject(with: data!,options: []) as! NSDictionary
-
-                    print("Parsed JSON: '\(jsonStr)'")
-//                   var message: NSString = myJSON["message"] as! NSString
-                    let alert = UIAlertController(title: "Success!", message: jsonStr as String?, preferredStyle: UIAlertControllerStyle.alert)
+                    var statusStr:String!
+                    if(jsonStr?.range(of: "out") != nil){
+                        statusStr = "Status: Out";
+                    }
+                        else{
+                        statusStr = "Status: In";
+                    }
+                    let alert = UIAlertController(title: "Status Changed!", message: statusStr as String?, preferredStyle: UIAlertControllerStyle.alert)
                     
                     // add an action (button)
                     alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
