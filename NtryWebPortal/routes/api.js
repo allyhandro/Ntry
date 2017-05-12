@@ -32,6 +32,18 @@ router.route('/items/_find')
         });
     });
 
+// find all items registered to a specific client by name
+router.route('/clients/:clientName/_find')
+    .get(function(req, res) {
+        Client.findOne({name:req.params.clientName}, function(err, client) {
+            if (err) res.send(err);
+            Item.find({client_id: client._id}, function(err, items) {
+                if (err) res.send(err);
+                res.json(items);
+            });
+        });
+    });
+
 // find item matching item_id
 router.route('/items/:item_id/_findOne')
     .get(function(req, res){
