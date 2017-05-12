@@ -14,18 +14,22 @@ class ClientInfoTableViewController:UITableViewController{
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
+    @IBOutlet weak var navBar: UINavigationItem!
+    var clientName = String()
+    var client = Client()
     //Array of art listed under chosen client
     //var artData = [[String:AnyObject]]
     
     override func viewDidLoad() {
+        self.navBar.title = clientName
         super.viewDidLoad()
-
         if self.revealViewController() != nil {
             self.revealViewController().rearViewRevealWidth = 165
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        //SET UP CLIENT INFO
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -34,5 +38,6 @@ class ClientInfoTableViewController:UITableViewController{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreat
     }
-    
+    func fetchClientInfo(){
+    }
 }

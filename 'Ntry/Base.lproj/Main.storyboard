@@ -231,18 +231,30 @@
         <scene sceneID="Una-dC-VoP">
             <objects>
                 <tableViewController id="EQB-Do-EHr" customClass="ClientsTableViewController" customModule="_Ntry" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="3e4-B4-DjP">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="3e4-B4-DjP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ClientList" id="ffZ-JI-wdr">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ClientCell" textLabel="zwZ-VI-4PE" style="IBUITableViewCellStyleDefault" id="ffZ-JI-wdr">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ffZ-JI-wdr" id="7BK-n0-0mU">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zwZ-VI-4PE">
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="5ja-EV-ohv" kind="show" identifier="showClientInfo" id="SeJ-af-lul"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -257,6 +269,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="menuButton" destination="OQp-KA-Y0D" id="cS3-wL-4Mc"/>
+                        <outlet property="tbView" destination="3e4-B4-DjP" id="dgW-wR-zE7"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j9c-H8-pfz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -272,7 +285,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArtList" id="fkL-DP-4IE">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArtCell" id="fkL-DP-4IE">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fkL-DP-4IE" id="36B-nu-sVB">
@@ -291,6 +304,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="fXP-Jb-nGj" id="48w-eL-3UY"/>
+                        <outlet property="tbView" destination="jmq-bd-HgP" id="v3a-ft-Z9H"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3j-gj-hpC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -840,7 +854,7 @@
             </objects>
             <point key="canvasLocation" x="4633" y="1583"/>
         </scene>
-        <!--Clients-->
+        <!--Client Info Table View Controller-->
         <scene sceneID="dhW-jF-Thk">
             <objects>
                 <tableViewController id="5ja-EV-ohv" customClass="ClientInfoTableViewController" customModule="_Ntry" customModuleProvider="target" sceneMemberID="viewController">
@@ -860,12 +874,13 @@
                         </prototypes>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Clients" id="Z5N-gE-O3q">
+                    <navigationItem key="navigationItem" id="Z5N-gE-O3q">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="flx-sb-mpG"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="menuButton" destination="flx-sb-mpG" id="Gka-yb-de2"/>
+                        <outlet property="navBar" destination="Z5N-gE-O3q" id="MDX-tU-LFm"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQG-Uq-IZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -991,7 +1006,7 @@
                                                     <constraint firstAttribute="width" constant="18" id="HQN-uh-T6Z"/>
                                                 </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <state key="normal" image="5F1EFDE8-5A93-401F-B83C-6D0EF9FC50D8"/>
+                                                <state key="normal" image="A22CDCAE-6B94-4328-AB35-72805A178F0C"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -1037,7 +1052,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRd-fM-anG">
                                 <rect key="frame" x="16" y="20" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="5F1EFDE8-5A93-401F-B83C-6D0EF9FC50D8"/>
+                                <state key="normal" title="Button" image="A22CDCAE-6B94-4328-AB35-72805A178F0C"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4s-Rc-cpt">
                                 <rect key="frame" x="125" y="586" width="124" height="39"/>
@@ -1070,7 +1085,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="5F1EFDE8-5A93-401F-B83C-6D0EF9FC50D8" width="40" height="40">
+        <image name="A22CDCAE-6B94-4328-AB35-72805A178F0C" width="40" height="40">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

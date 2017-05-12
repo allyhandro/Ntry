@@ -98,4 +98,6 @@ class ScanViewController: UIViewController{
         
         locationLabel.text = view2.messageLabel.text
     }
+    
+
 }

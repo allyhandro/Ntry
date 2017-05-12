@@ -93,4 +93,5 @@ class InOutViewController: UIViewController{
         artLabel.text = view2.messageLabel.text
         
     }
+
 }

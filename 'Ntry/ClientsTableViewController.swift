@@ -13,43 +13,22 @@ class ClientsTableViewController: UITableViewController{
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
-    //clien data from database
-    var clientData = [[String: AnyObject]]()
-    
-    
+    @IBOutlet var tbView: UITableView!
+    //Global Variable for name of clients
+    //clientNames = [Name of Client: ID of client]
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self;
+        tableView.delegate = self;
         if self.revealViewController() != nil {
             self.revealViewController().rearViewRevealWidth = 165
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        fetchClients()
-    
         // Do any additional setup after loading the view, typically from a nib.
-        
-        //TO DO
-        //Make HTTP GET request to retrieve ALL info on clients
-        //Parse JSON into dictionary and populate tableView
-//        
-//        let url:String = "http://ntry.herokuapp.com/api/clients/_find"
-//        let urlRequest = URL(string: url)
-//        
-//        URLSession.shared.dataTask(with: urlRequest!, completionHandler: {(data,response,error) in
-//            if(error != nil){
-//                print(error.debugDescription)
-//            }else{
-//                do{
-//                    self.clientData =  try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! [[String:AnyObject]]
-//                    OperationQueue.main.addOperation{
-//                        self.tableView.reloadData()
-//                    }
-//                }catch let error as NSError{
-//                    print(error)
-//                }
-//            }
-//        })
+    
     }
     
     func fetchClients(){
@@ -60,31 +39,73 @@ class ClientsTableViewController: UITableViewController{
                 return
             }
             do {
+                ClientInfo.clients.removeAll()
                 let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
                 for dictionary in json as! [[String: AnyObject]]{
-                    print(dictionary["name"]!)
+                    //print(dictionary["name"]!)
+                    ClientInfo.clientNames.append(dictionary["name"] as! String)
+                    ClientInfo.clients.append(Client(name:dictionary["name"] as! String))
                 }
-//                print(json)
+                ClientInfo.clientNames = ClientInfo.clientNames.sorted { $0.localizedCaseInsensitiveCompare($1) == ComparisonResult.orderedAscending }
+                
+                
+                
+                
             } catch let jsonError {
                 print(jsonError)
             }
             
-        }.resume()
+            }.resume()
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        //self.fetchClients()
+        super.viewWillAppear(animated)
+        tbView.reloadData()
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.clientData.count
+        return ClientInfo.clientNames.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier:"Cell",for:indexPath)
-        let item = self.clientData[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier:"ClientCell",for:indexPath)
+        cell.textLabel?.text = ClientInfo.clientNames[indexPath.row]
         return cell
     }
+    
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath
+        indexPath: NSIndexPath){
+        self.performSegue(withIdentifier: "showClientInfo", sender: self)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender:
+        Any?)
+    {
+        if (segue.identifier == "showClientInfo")
+        {
+            // upcoming is set to NewViewController (.swift)
+            var upcoming: ClientInfoTableViewController = segue.destination
+                as! ClientInfoTableViewController
+            // indexPath is set to the path that was tapped
+            let indexPath = tbView.indexPathForSelectedRow!
+            // titleString is set to the title at the row in the objects array.
+            let client = ClientInfo.clientNames[indexPath.row]
+            // the titleStringViaSegue property of NewViewController is set.
+            upcoming.clientName = client
+            
+            self.tbView.deselectRow(at: indexPath, animated: true)
+        }
+    }
+
     
 }
