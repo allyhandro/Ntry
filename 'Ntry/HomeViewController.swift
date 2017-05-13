@@ -33,7 +33,7 @@ class HomeViewController: UIViewController{
     @IBOutlet weak var menuButton: UIBarButtonItem!
 
     //size of array from database
-    @IBOutlet weak var clienNum: UILabel!
+    @IBOutlet weak var clientNum: UILabel!
     @IBOutlet weak var artNum: UILabel!
 
     
@@ -41,6 +41,8 @@ class HomeViewController: UIViewController{
         super.viewDidLoad()
         self.fetchClients()
         self.fetchArt()
+        clientNum.text = String(ClientInfo.clientNames.count)
+        artNum.text = String(ArtInfo.artTitles.count)
         if self.revealViewController() != nil {
             self.revealViewController().rearViewRevealWidth = 165
             menuButton.target = self.revealViewController()
