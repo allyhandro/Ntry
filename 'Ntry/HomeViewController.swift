@@ -11,6 +11,7 @@ import UIKit
 
 struct Client{
     var name: String!
+    var id: String!
     //other info about client
 }
 struct Art{
@@ -68,7 +69,7 @@ class HomeViewController: UIViewController{
                 for dictionary in json as! [[String: AnyObject]]{
                     //print(dictionary["name"]!)
                     ClientInfo.clientNames.append(dictionary["name"] as! String)
-                    ClientInfo.clients.append(Client(name:dictionary["name"] as! String))
+                    ClientInfo.clients.append(Client(name:dictionary["name"] as! String, id: dictionary["_id"] as! String))
                 }
                 ClientInfo.clientNames = ClientInfo.clientNames.sorted { $0.localizedCaseInsensitiveCompare($1) == ComparisonResult.orderedAscending }
 

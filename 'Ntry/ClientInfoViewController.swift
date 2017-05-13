@@ -16,6 +16,7 @@ class ClientInfoTableViewController:UITableViewController{
     
     @IBOutlet weak var navBar: UINavigationItem!
     var clientName = String()
+    var clientId = String()
     var client = Client()
     //Array of art listed under chosen client
     //var artData = [[String:AnyObject]]

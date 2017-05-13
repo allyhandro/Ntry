@@ -44,7 +44,7 @@ class ClientsTableViewController: UITableViewController{
                 for dictionary in json as! [[String: AnyObject]]{
                     //print(dictionary["name"]!)
                     ClientInfo.clientNames.append(dictionary["name"] as! String)
-                    ClientInfo.clients.append(Client(name:dictionary["name"] as! String))
+                    ClientInfo.clients.append(Client(name:dictionary["name"] as! String, id:dictionary["_id"] as! String))
                 }
                 ClientInfo.clientNames = ClientInfo.clientNames.sorted { $0.localizedCaseInsensitiveCompare($1) == ComparisonResult.orderedAscending }
                 
@@ -100,8 +100,10 @@ class ClientsTableViewController: UITableViewController{
             let indexPath = tbView.indexPathForSelectedRow!
             // titleString is set to the title at the row in the objects array.
             let client = ClientInfo.clientNames[indexPath.row]
+            let clientId = ClientInfo.clients[indexPath.row].id
             // the titleStringViaSegue property of NewViewController is set.
             upcoming.clientName = client
+            upcoming.clientId = clientId!
             
             self.tbView.deselectRow(at: indexPath, animated: true)
         }
