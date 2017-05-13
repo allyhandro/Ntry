@@ -33,9 +33,9 @@ router.route('/items/_find')
     });
 
 // find all items registered to a specific client by name
-router.route('/clients/:clientName/_find')
+router.route('/clients/:clientId/_findItem')
     .get(function(req, res) {
-        Client.findOne({name:req.params.clientName}, function(err, client) {
+        Client.findById(req.params.clientId, function(err, client) {
             if (err) res.send(err);
             Item.find({client_id: client._id}, function(err, items) {
                 if (err) res.send(err);
